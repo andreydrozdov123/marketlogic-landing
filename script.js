@@ -50,8 +50,18 @@
     }
 
     head.addEventListener('click', function () {
-      var open = mod.classList.toggle('is-open');
-      head.setAttribute('aria-expanded', open ? 'true' : 'false');
+      var wasOpen = mod.classList.contains('is-open');
+
+      // закрываем все остальные — открытым остаётся только один модуль
+      Array.prototype.forEach.call(document.querySelectorAll('.mod'), function (m) {
+        m.classList.remove('is-open');
+        m.querySelector('.mod__h').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!wasOpen) {
+        mod.classList.add('is-open');
+        head.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 
