@@ -13,14 +13,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=10">
+<link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
 <!-- ═══════ ПРОМО-ПОЛОСА (сюда можно поставить акцию/скидку) ═══════ -->
 <div class="promo">
   <div class="wrap promo__in">
-    <span class="promo__txt">Набор открыт · Обучение стартует в любой день</span>
+    <span class="promo__txt">Первые 2 модуля и консультация — бесплатно</span>
     <a href="#apply" class="promo__link">Записаться →</a>
   </div>
 </div>
@@ -66,7 +66,7 @@
 <section class="hero">
   <div class="wrap hero__in">
     <div class="hero__copy">
-      <span class="pill">Онлайн-курс для начинающих</span>
+      <span class="pill">Онлайн-курс для начинающих · Старт бесплатно</span>
 
       <h1 class="hero__h1">
         Научитесь понимать&nbsp;рынок,<br>
@@ -79,13 +79,17 @@
       </p>
 
       <div class="hero__btns">
-        <a href="#apply" class="btn btn--lg">Записаться на курс</a>
+        <a href="#apply" class="btn btn--lg">Начать бесплатно</a>
         <a href="#program" class="btn btn--lg btn--line">Смотреть программу</a>
       </div>
 
       <p class="hero__note">
         <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.4l4 4 8-8.8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Подходит даже тем, кто никогда раньше не торговал
+      </p>
+      <p class="hero__note">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.4l4 4 8-8.8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Первые два модуля и консультация — бесплатно
       </p>
     </div>
 
@@ -275,14 +279,19 @@
       <p class="sec__lead">
         8 модулей: сначала база и терминал, затем анализ, риск и психология,
         и только в конце — сборка стратегии и практика.
+        <b class="lead-free">Первые два модуля — бесплатно.</b>
       </p>
     </div>
 
     <ol class="prog">
-      <li class="mod">
+      <li class="mod mod--free">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">01</span>
-          <span class="mod__t">Основы рынка</span>
+          <span class="mod__c">
+            <span class="mod__t">Как устроен рынок и откуда берётся цена</span>
+            <span class="mod__topic">Основы рынка</span>
+          </span>
+          <span class="mod__free">Бесплатно</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -295,10 +304,14 @@
           </ul>
         </div>
       </li>
-      <li class="mod">
+      <li class="mod mod--free">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">02</span>
-          <span class="mod__t">Торговый терминал</span>
+          <span class="mod__c">
+            <span class="mod__t">Как совершить первую сделку и не запутаться в терминале</span>
+            <span class="mod__topic">Торговый терминал</span>
+          </span>
+          <span class="mod__free">Бесплатно</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -315,7 +328,11 @@
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">03</span>
-          <span class="mod__t">Чтение графика</span>
+          <span class="mod__c">
+            <span class="mod__t">Как читать график, а не гадать по свечам</span>
+            <span class="mod__topic">Чтение графика</span>
+          </span>
+          
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -332,7 +349,11 @@
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">04</span>
-          <span class="mod__t">Технический анализ</span>
+          <span class="mod__c">
+            <span class="mod__t">Как понять, где входить в сделку и почему именно здесь</span>
+            <span class="mod__topic">Технический анализ</span>
+          </span>
+          
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -348,7 +369,11 @@
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">05</span>
-          <span class="mod__t">Риск-менеджмент</span>
+          <span class="mod__c">
+            <span class="mod__t">Как не потерять депозит на одной сделке</span>
+            <span class="mod__topic">Риск-менеджмент</span>
+          </span>
+          
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -364,7 +389,11 @@
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">06</span>
-          <span class="mod__t">Психология трейдера</span>
+          <span class="mod__c">
+            <span class="mod__t">Как торговать спокойно и не пытаться отыграться</span>
+            <span class="mod__topic">Психология трейдера</span>
+          </span>
+          
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -380,7 +409,11 @@
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">07</span>
-          <span class="mod__t">Торговая стратегия</span>
+          <span class="mod__c">
+            <span class="mod__t">Как собрать свою систему вместо случайных сделок</span>
+            <span class="mod__topic">Торговая стратегия</span>
+          </span>
+          
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -397,7 +430,11 @@
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
           <span class="mod__n">08</span>
-          <span class="mod__t">Практика</span>
+          <span class="mod__c">
+            <span class="mod__t">Как применять всё это на реальном рынке</span>
+            <span class="mod__topic">Практика</span>
+          </span>
+          
           <span class="mod__x" aria-hidden="true"></span>
         </button>
         <div class="mod__b">
@@ -415,10 +452,10 @@
 
     <div class="prog__cta">
       <div>
-        <b>Программа проходится в своём темпе</b>
-        <span>Можно совмещать с работой или учёбой</span>
+        <b>Начните с бесплатной части</b>
+        <span>Первые два модуля и консультация — без оплаты</span>
       </div>
-      <a href="#apply" class="btn">Записаться на курс</a>
+      <a href="#apply" class="btn">Открыть доступ</a>
     </div>
   </div>
 </section>
@@ -428,15 +465,16 @@
   <div class="wrap">
     <div class="sec__head">
       <h2 class="h2">Обучение проходит в собственном темпе</h2>
-      <p class="sec__lead">Без марафонов и «секретных стратегий» — последовательная теория и разборы на практике.</p>
+      <p class="sec__lead">Без марафонов и «секретных стратегий» — последовательная теория, задания и разборы.</p>
     </div>
 
     <div class="fmt">
       <ul class="fmt__list">
-        <li><span class="fmt__n">01</span><div><h3>Пошаговые модули</h3><p>Материал идёт от простого к сложному — не нужно собирать знания по роликам из YouTube.</p></div></li>
+        <li><span class="fmt__n">01</span><div><h3>Пошаговые уроки</h3><p>Материал идёт от простого к сложному — не нужно собирать знания по роликам из YouTube.</p></div></li>
         <li><span class="fmt__n">02</span><div><h3>Практика на графике</h3><p>Каждая тема закрепляется разбором реальных ситуаций на рынке.</p></div></li>
-        <li><span class="fmt__n">03</span><div><h3>Ответы на вопросы</h3><p>Можно уточнить непонятное и получить обратную связь по своим разборам.</p></div></li>
-        <li><span class="fmt__n">04</span><div><h3>Свой темп</h3><p>Без жёстких дедлайнов: обучение совмещается с работой или учёбой.</p></div></li>
+        <li><span class="fmt__n">03</span><div><h3>Короткие домашние задания</h3><p>После модуля — небольшое задание: разметить график, посчитать риск, описать сценарий сделки.</p></div></li>
+        <li><span class="fmt__n">04</span><div><h3>Обратная связь куратора</h3><p>Куратор разбирает ваши задания и сделки: что сделано по правилам, а что на эмоциях.</p></div></li>
+        <li><span class="fmt__n">05</span><div><h3>Свой темп</h3><p>Без жёстких дедлайнов: обучение совмещается с работой или учёбой.</p></div></li>
       </ul>
 
       <div class="fmt__media">
@@ -458,33 +496,50 @@
       <h2 class="h2">Начать сможет каждый — даже без опыта</h2>
     </div>
 
-    <div class="fit">
-      <div class="fit__card fit__card--yes">
-        <span class="fit__lbl">Курс для вас, если вы</span>
-        <ul class="check">
-          <li>никогда раньше не занимались трейдингом</li>
-          <li>уже пробовали торговать, но делаете это хаотично</li>
-          <li>устали зависеть от чужих сигналов</li>
-          <li>хотите понимать логику движения рынка</li>
-          <li>хотите структурированную базу вместо сотен роликов из YouTube</li>
-        </ul>
-      </div>
+    <ul class="segs">
+      <li class="seg">
+        <span class="seg__tag">Новичок</span>
+        <p class="seg__q">«Я вообще ничего не понимаю в трейдинге»</p>
+        <p class="seg__a">
+          Курс начинается с нуля: что такое рынок, откуда берётся цена, как работает терминал.
+          Первые два модуля бесплатные — можно проверить, ваше ли это, ничем не рискуя.
+        </p>
+      </li>
+      <li class="seg">
+        <span class="seg__tag">Уже пробовал</span>
+        <p class="seg__q">«Торговал сам и сливал депозит»</p>
+        <p class="seg__a">
+          Чаще всего дело не в стратегии, а в отсутствии правил: нет расчёта риска, нет плана,
+          решения принимаются на эмоциях. Здесь вы соберёте систему и начнёте разбирать свои сделки.
+        </p>
+      </li>
+      <li class="seg">
+        <span class="seg__tag">Скептик</span>
+        <p class="seg__q">«Не верю, что этому вообще можно научить»</p>
+        <p class="seg__a">
+          Мы не обещаем доходность и не даём сигналов. Обещаем понимание процесса: почему цена
+          двигается, чем вы рискуете и как принимать решение самостоятельно.
+        </p>
+      </li>
+    </ul>
 
-      <div class="fit__card fit__card--no">
+    <div class="nofit">
+      <div class="nofit__head">
         <span class="fit__lbl">Кому не подойдёт</span>
-        <ul class="cross">
-          <li>нужны готовые сигналы, а не понимание рынка</li>
-          <li>ждёте результат «завтра и без усилий»</li>
-          <li>не готовы вести торговый план и считать риск</li>
-          <li>ищете гарантию дохода</li>
-          <li>рассчитываете удвоить депозит за неделю</li>
-        </ul>
+        <p>Честно говорим сразу, чтобы не тратить ваше время.</p>
       </div>
+      <ul class="cross">
+        <li>нужны готовые сигналы, а не понимание рынка</li>
+        <li>ждёте результат «завтра и без усилий»</li>
+        <li>не готовы вести торговый план и считать риск</li>
+        <li>ищете гарантию дохода</li>
+        <li>рассчитываете удвоить депозит за неделю</li>
+      </ul>
     </div>
 
     <div class="fit__cta">
-      <p>Если первое описание про вас — начните с заявки, разберём ваш уровень и цели.</p>
-      <a href="#apply" class="btn">Оставить заявку</a>
+      <p>Начните с бесплатных модулей и консультации — дальше решите сами.</p>
+      <a href="#apply" class="btn">Получить доступ</a>
     </div>
   </div>
 </section>
@@ -553,10 +608,10 @@
 <section class="apply" id="apply">
   <div class="wrap apply__in">
     <div class="apply__copy">
-      <h2 class="h2">Записаться на курс или получить консультацию</h2>
-      <p>Расскажем про формат, программу и с чего начать, если опыта пока нет совсем.</p>
+      <h2 class="h2">Откройте бесплатные модули и консультацию</h2>
+      <p>Доступ к первым двум модулям и консультация — бесплатно. Расскажем про формат и с чего начать, если опыта пока нет совсем.</p>
       <ul class="apply__pts">
-        <li>Разберём ваш уровень и цели</li>
+        <li>Откроем первые два модуля курса</li>
         <li>Покажем структуру программы</li>
         <li>Ответим на вопросы без давления</li>
       </ul>
@@ -581,8 +636,8 @@
       <input type="hidden" name="referrer"     value="">
       <input type="hidden" name="landing_url"  value="">
 
-      <h3 class="form__t">Оставить заявку</h3>
-      <p class="form__sub">Свяжемся, ответим на вопросы и подскажем, с чего начать.</p>
+      <h3 class="form__t">Получить бесплатный доступ</h3>
+      <p class="form__sub">Откроем бесплатные модули и ответим на вопросы.</p>
 
       <div class="form-row">
         <label for="name">Имя</label>
@@ -613,7 +668,7 @@
         <span>Соглашаюсь с <a href="privacy.html" target="_blank" rel="noopener">политикой обработки персональных данных</a> и получением обратной связи.</span>
       </label>
 
-      <button type="submit" class="btn btn--lg btn--block form-submit" id="submitBtn">Отправить заявку</button>
+      <button type="submit" class="btn btn--lg btn--block form-submit" id="submitBtn">Получить доступ бесплатно</button>
     </form>
   </div>
 </section>
@@ -655,6 +710,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=10"></script>
+<script src="script.js?v=11"></script>
 </body>
 </html>

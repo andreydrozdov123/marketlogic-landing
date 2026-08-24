@@ -219,7 +219,16 @@ figure{margin:0}
   background:transparent;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer;
 }
 .mod__n{flex:0 0 auto;min-width:34px;font-size:20px;font-weight:800;letter-spacing:-.04em;color:var(--ind)}
-.mod__t{flex:1;font-size:18px;font-weight:700;letter-spacing:-.02em}
+.mod__c{flex:1;display:block}
+.mod__t{display:block;font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.25}
+.mod__topic{display:block;margin-top:5px;font-size:12.5px;font-weight:600;color:var(--ink-3)}
+.mod__free{
+  flex:0 0 auto;padding:6px 11px;border-radius:7px;
+  background:var(--ind-soft);color:var(--ind);
+  font-size:11.5px;font-weight:800;letter-spacing:.04em;
+}
+.mod--free{box-shadow:0 0 0 1.5px var(--ind-soft) inset}
+.lead-free{display:block;margin-top:8px;color:var(--ind);font-weight:800}
 .mod__x{position:relative;flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:var(--gray);transition:background .2s ease,transform .25s ease}
 .mod__x::before,.mod__x::after{content:"";position:absolute;left:50%;top:50%;background:var(--ink);border-radius:2px;transition:opacity .2s ease,background .2s ease}
 .mod__x::before{width:11px;height:2px;transform:translate(-50%,-50%)}
@@ -253,22 +262,30 @@ figure{margin:0}
 .ph--fill{min-height:280px;height:100%}
 
 /* ---------- КОМУ ПОДОЙДЁТ ---------- */
-.fit{display:grid;gap:14px;align-items:stretch}
-.fit__card{padding:28px 26px;border-radius:var(--r-lg);background:#fff}
-.fit__card--no{background:transparent;border:1px solid var(--line-2, #D9D9DE)}
-.fit__lbl{
-  display:block;margin-bottom:20px;
-  font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ind);
+.segs{display:grid;gap:14px}
+.seg{
+  display:flex;flex-direction:column;
+  padding:28px 26px;background:#fff;border-radius:var(--r-lg);
 }
-.fit__card--no .fit__lbl{color:var(--ink-3)}
+.seg__tag{
+  display:inline-block;align-self:flex-start;margin-bottom:16px;padding:6px 12px;border-radius:7px;
+  background:var(--ind-soft);color:var(--ind);
+  font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+}
+.seg__q{font-size:19px;font-weight:800;letter-spacing:-.03em;line-height:1.25;margin-bottom:12px}
+.seg__a{color:var(--ink-2);font-size:15px;line-height:1.55}
 
-.check,.cross{display:grid;gap:13px}
-.check li,.cross li{position:relative;padding-left:34px;font-size:15.5px;line-height:1.45}
-.check li{color:var(--ink)}
-.check li::before{content:"";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:7px;background:var(--ind)}
-.check li::after{content:"";position:absolute;left:6px;top:8px;width:10px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg)}
-
-.cross li{color:var(--ink-2)}
+.nofit{
+  display:grid;gap:20px;margin-top:14px;padding:28px 26px;
+  border:1px solid var(--line-2,#D9D9DE);border-radius:var(--r-lg);
+}
+.nofit__head p{margin-top:8px;color:var(--ink-2);font-size:14.5px}
+.fit__lbl{
+  display:block;
+  font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+}
+.cross{display:grid;gap:13px}
+.cross li{position:relative;padding-left:34px;font-size:15px;line-height:1.45;color:var(--ink-2)}
 .cross li::before{
   content:"";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:7px;
   background:#fff;border:1px solid var(--line);
@@ -279,7 +296,7 @@ figure{margin:0}
 }
 
 .fit__cta{
-  display:grid;gap:16px;margin-top:16px;padding:26px 24px;
+  display:grid;gap:16px;margin-top:14px;padding:26px 24px;
   background:#fff;border-radius:var(--r-lg);
 }
 .fit__cta p{color:var(--ink-2);font-size:15.5px}
@@ -412,8 +429,10 @@ figure{margin:0}
   .claim__in{grid-template-columns:1.05fr .95fr;gap:56px}
   .fmt{grid-template-columns:1.05fr .95fr;gap:44px;align-items:start}
   .fmt__media{grid-template-columns:1fr;gap:16px;height:100%}
-  .fit{grid-template-columns:1fr 1fr;gap:16px}
-  .fit__card{padding:36px 34px}
+  .segs{grid-template-columns:repeat(3,1fr);gap:16px}
+  .seg{padding:34px 30px}
+  .nofit{grid-template-columns:.42fr 1fr;gap:40px;align-items:start;padding:34px}
+  .nofit .cross{grid-template-columns:1fr 1fr;gap:14px 28px}
   .fit__cta{grid-template-columns:1fr auto;align-items:center;padding:28px 34px}
   .fit__cta .btn{justify-self:end}
   .author{grid-template-columns:.82fr 1.18fr;gap:64px;align-items:center}
