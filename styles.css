@@ -141,6 +141,9 @@ figure{margin:0}
 .hero__note{display:flex;align-items:center;gap:9px;margin-top:20px;font-size:14px;color:var(--ink-2)}
 .hero__note svg{width:19px;height:19px;flex:0 0 19px;color:var(--ind)}
 
+.hero__pic{display:block}
+.hero__pic img{width:100%;height:auto;border-radius:var(--r-lg)}
+
 .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:36px;background:var(--line)}
 .facts li{background:#fff;padding:22px 16px 22px 0}
 .facts li:nth-child(even){padding-left:16px}

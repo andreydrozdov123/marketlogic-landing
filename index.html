@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 
@@ -95,12 +95,10 @@
       </p>
     </div>
 
-    <!-- ЗАМЕНИТЬ НА ФОТО: <img src="img/hero.jpg" alt="Автор курса за работой"> -->
-    <figure class="ph ph--hero">
-      <span class="ph__ic" aria-hidden="true">🖼</span>
-      <b>Главное фото</b>
-      <span class="ph__hint">Автор / рабочее место с графиками<br>1200 × 1400 px, вертикальное</span>
-    </figure>
+    <picture class="hero__pic">
+      <source srcset="img/hero.webp" type="image/webp">
+      <img src="img/hero.jpg" width="1100" height="1284" alt="Трейдер за рабочим местом: графики на трёх экранах" fetchpriority="high" decoding="async">
+    </picture>
   </div>
 
   <div class="wrap">
@@ -752,6 +750,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=12"></script>
+<script src="script.js?v=13"></script>
 </body>
 </html>
