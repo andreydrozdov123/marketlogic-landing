@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MARKETLOGIC — практическое обучение трейдингу с нуля</title>
+<meta name="description" content="Практическое обучение трейдингу для начинающих: от устройства финансовых рынков до самостоятельного анализа, риск-менеджмента и торгового плана.">
+<meta name="theme-color" content="#080A0F">
+<meta property="og:title" content="MARKETLOGIC — научись понимать рынок, а не угадывать его">
+<meta property="og:description" content="Практическое обучение трейдингу для начинающих. От первых терминов до самостоятельных решений.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="logo" aria-label="MARKETLOGIC — на главную">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8 11L13 15L22 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 5h6v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo__text">MARKET<b>LOGIC</b></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Разделы страницы">
+      <a href="#program">Программа</a>
+      <a href="#result">Результат</a>
+      <a href="#fit">Кому подойдет</a>
+      <a href="#author">Автор</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+
+    <a href="#apply" class="btn btn--sm nav__cta">Начать обучение</a>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#program">Программа</a>
+    <a href="#result">Результат</a>
+    <a href="#fit">Кому подойдет</a>
+    <a href="#author">Автор</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#apply" class="btn btn--block">Начать обучение</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+
+    <div class="hero__copy">
+      <span class="eyebrow"><i class="dot"></i> Онлайн-обучение с нуля</span>
+
+      <h1 class="hero__title">
+        Научись <span class="accent">понимать рынок</span>,<br>а не угадывать его
+      </h1>
+
+      <p class="hero__lead">
+        Практическое обучение трейдингу для начинающих. От первых терминов и устройства
+        финансовых рынков — до самостоятельного анализа и совершения сделок.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#apply" class="btn btn--lg">Начать обучение</a>
+        <a href="#program" class="btn btn--ghost btn--lg">Смотреть программу</a>
+      </div>
+
+      <p class="hero__note">
+        <svg class="ico" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Подходит даже тем, кто никогда раньше не торговал
+      </p>
+
+      <ul class="hero__stats">
+        <li><b>8</b><span>модулей программы</span></li>
+        <li><b>6 лет</b><span>на финансовых рынках</span></li>
+        <li><b>0</b><span>требуемого опыта</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="chart-card">
+        <div class="chart-card__head">
+          <div>
+            <span class="chart-card__pair">EUR / USD</span>
+            <span class="chart-card__tf">H1 · структура рынка</span>
+          </div>
+          <span class="chart-card__badge">Разбор</span>
+        </div>
+
+        <svg class="chart" viewBox="0 0 320 170" preserveAspectRatio="none" role="img">
+          <defs>
+            <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#3ECF8E" stop-opacity=".28"/>
+              <stop offset="100%" stop-color="#3ECF8E" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g class="grid">
+            <line x1="0" y1="34" x2="320" y2="34"/>
+            <line x1="0" y1="68" x2="320" y2="68"/>
+            <line x1="0" y1="102" x2="320" y2="102"/>
+            <line x1="0" y1="136" x2="320" y2="136"/>
+          </g>
+          <path class="chart__area" d="M0,140 L26,132 L52,138 L78,112 L104,120 L130,92 L156,104 L182,72 L208,84 L234,54 L260,66 L286,38 L320,26 L320,170 L0,170 Z" fill="url(#fill)"/>
+          <path class="chart__line" d="M0,140 L26,132 L52,138 L78,112 L104,120 L130,92 L156,104 L182,72 L208,84 L234,54 L260,66 L286,38 L320,26"/>
+          <line class="chart__level" x1="0" y1="72" x2="320" y2="72"/>
+          <circle class="chart__pt" cx="286" cy="38" r="4.5"/>
+        </svg>
+
+        <div class="chart-card__legend">
+          <span><i class="lg lg--lvl"></i> Уровень</span>
+          <span><i class="lg lg--imp"></i> Импульс</span>
+          <span><i class="lg lg--cor"></i> Коррекция</span>
+        </div>
+      </div>
+
+      <div class="float-card float-card--risk">
+        <span class="float-card__label">Риск на сделку</span>
+        <span class="float-card__value">1&nbsp;%</span>
+        <span class="float-card__hint">рассчитан до входа</span>
+      </div>
+
+      <div class="float-card float-card--plan">
+        <span class="float-card__label">Торговый план</span>
+        <span class="float-card__value">Готов</span>
+        <span class="float-card__hint">вход · стоп · цель</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ ЛОГОТИПЫ / СМЫСЛОВАЯ ЛЕНТА ============ -->
+<section class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Структура рынка</span><i></i>
+    <span>Уровни</span><i></i>
+    <span>Риск-менеджмент</span><i></i>
+    <span>Stop Loss / Take Profit</span><i></i>
+    <span>Технический анализ</span><i></i>
+    <span>Психология трейдера</span><i></i>
+    <span>Торговый план</span><i></i>
+    <span>Размер позиции</span><i></i>
+    <span>Структура рынка</span><i></i>
+    <span>Уровни</span><i></i>
+    <span>Риск-менеджмент</span><i></i>
+    <span>Stop Loss / Take Profit</span><i></i>
+    <span>Технический анализ</span><i></i>
+    <span>Психология трейдера</span><i></i>
+    <span>Торговый план</span><i></i>
+    <span>Размер позиции</span><i></i>
+  </div>
+</section>
+
+<!-- ============ БОЛЬ ============ -->
+<section class="section" id="pain">
+  <div class="container">
+    <div class="section__head">
+      <span class="tag">Почему не получается</span>
+      <h2 class="section__title">Почему большинство новичков теряют деньги</h2>
+      <p class="section__lead">
+        Не потому что трейдинг невозможно освоить. Обычно причина проще — и она повторяется
+        почти у всех.
+      </p>
+    </div>
+
+    <ul class="pain-grid">
+      <li class="pain">
+        <span class="pain__num">01</span>
+        <h3>Торговля без системы</h3>
+        <p>Каждая сделка — новое правило. Результат невозможно ни повторить, ни разобрать.</p>
+      </li>
+      <li class="pain">
+        <span class="pain__num">02</span>
+        <h3>Сделки на эмоциях</h3>
+        <p>Вход по азарту, выход по страху. Решение принимает состояние, а не расчет.</p>
+      </li>
+      <li class="pain">
+        <span class="pain__num">03</span>
+        <h3>Непонимание риска</h3>
+        <p>Одна неудачная сделка забирает то, что копилось неделями.</p>
+      </li>
+      <li class="pain">
+        <span class="pain__num">04</span>
+        <h3>Чужие сигналы</h3>
+        <p>Копируешь чужие входы, но не понимаешь логику — и не можешь ее повторить.</p>
+      </li>
+      <li class="pain">
+        <span class="pain__num">05</span>
+        <h3>Нет базовых знаний</h3>
+        <p>Термины, инструменты, устройство рынка — пробелы в основе ломают всё, что сверху.</p>
+      </li>
+      <li class="pain">
+        <span class="pain__num">06</span>
+        <h3>Спешка заработать</h3>
+        <p>Попытка получить результат за неделю почти всегда стоит депозита.</p>
+      </li>
+    </ul>
+
+    <div class="pain__answer">
+      <div class="pain__answer-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8 11L13 15L22 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p>
+        <b>MARKETLOGIC — про другой подход.</b>
+        Сначала ты учишься понимать, что происходит на рынке и почему,
+        и только потом принимаешь торговые решения.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ РЕЗУЛЬТАТ ============ -->
+<section class="section section--alt" id="result">
+  <div class="container">
+    <div class="section__head">
+      <span class="tag">Результат обучения</span>
+      <h2 class="section__title">Что ты будешь уметь после курса</h2>
+      <p class="section__lead">Девять конкретных навыков, которые складываются в одну рабочую систему.</p>
+    </div>
+
+    <ul class="skills">
+      <li><span class="skills__ico">📊</span><h3>Устройство рынков</h3><p>Как работают финансовые рынки и кто на них влияет.</p></li>
+      <li><span class="skills__ico">📈</span><h3>Чтение графиков</h3><p>Видеть структуру движения, а не хаотичные свечи.</p></li>
+      <li><span class="skills__ico">🔎</span><h3>Поиск возможностей</h3><p>Находить потенциальные точки входа и выхода.</p></li>
+      <li><span class="skills__ico">🧠</span><h3>Торговая логика</h3><p>Формировать обоснование сделки до ее открытия.</p></li>
+      <li><span class="skills__ico">⚖️</span><h3>Расчет риска</h3><p>Понимать, чем и сколько ты рискуешь в каждой сделке.</p></li>
+      <li><span class="skills__ico">💰</span><h3>Размер позиции</h3><p>Определять объем так, чтобы одна ошибка не была последней.</p></li>
+      <li><span class="skills__ico">🛑</span><h3>Stop Loss и Take Profit</h3><p>Ставить защитные и целевые уровни осмысленно.</p></li>
+      <li><span class="skills__ico">📋</span><h3>Торговый план</h3><p>Собственный набор правил вместо интуиции.</p></li>
+      <li><span class="skills__ico">😤</span><h3>Контроль эмоций</h3><p>Не принимать решения на страхе, жадности и желании отыграться.</p></li>
+    </ul>
+
+    <figure class="quote">
+      <blockquote>
+        Моя задача — не дать тебе «сигнал».<br>
+        <span class="accent">Моя задача — научить тебя принимать решение самостоятельно.</span>
+      </blockquote>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ ПРОГРАММА ============ -->
+<section class="section" id="program">
+  <div class="container">
+    <div class="section__head">
+      <span class="tag">Программа</span>
+      <h2 class="section__title">8 модулей — от нуля до собственной системы</h2>
+      <p class="section__lead">
+        Последовательный путь: сначала база и терминал, затем анализ, риск и психология,
+        и только в конце — сборка стратегии и практика.
+      </p>
+    </div>
+
+    <ol class="program">
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">01</span>
+          <span class="module__title">Основы рынка</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Что такое Forex, акции, индексы и сырьевые товары. Кто двигает рынок и откуда вообще берется цена.</p>
+        </div>
+      </li>
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">02</span>
+          <span class="module__title">Торговый терминал</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Открытие и закрытие сделки, типы ордеров, объем позиции, Stop Loss и Take Profit. Уверенная работа с интерфейсом.</p>
+        </div>
+      </li>
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">03</span>
+          <span class="module__title">Чтение графика</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Тренды, уровни, структура рынка, импульсы и коррекции. Как график превращается в понятную картину.</p>
+        </div>
+      </li>
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">04</span>
+          <span class="module__title">Технический анализ</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Как искать потенциальные точки входа и выхода и на чем основывать торговое решение.</p>
+        </div>
+      </li>
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">05</span>
+          <span class="module__title">Риск-менеджмент</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Сколько можно рисковать в одной сделке и почему сохранение капитала важнее одной прибыльной позиции.</p>
+        </div>
+      </li>
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">06</span>
+          <span class="module__title">Психология трейдера</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Жадность, страх, желание отыграться и другие ошибки, которые обнуляют даже хорошую стратегию.</p>
+        </div>
+      </li>
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">07</span>
+          <span class="module__title">Торговая стратегия</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Собираем все знания в единую систему с понятными правилами входа, выхода и управления позицией.</p>
+        </div>
+      </li>
+      <li class="module">
+        <button class="module__head" aria-expanded="false">
+          <span class="module__num">08</span>
+          <span class="module__title">Практика</span>
+          <span class="module__chev" aria-hidden="true"></span>
+        </button>
+        <div class="module__body">
+          <p>Разбор рынка и сделок вместе с преподавателем — теория закрепляется на реальных примерах.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="program__cta">
+      <p>Программа выстроена так, чтобы ее можно было проходить параллельно с работой.</p>
+      <a href="#apply" class="btn">Записаться на обучение</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КОМУ ПОДОЙДЕТ ============ -->
+<section class="section section--alt" id="fit">
+  <div class="container fit">
+    <div class="fit__copy">
+      <span class="tag">Кому подойдет</span>
+      <h2 class="section__title">Это обучение для тебя, если ты</h2>
+      <ul class="checklist">
+        <li>никогда раньше не занимался трейдингом;</li>
+        <li>уже пробовал торговать, но делаешь это хаотично;</li>
+        <li>устал зависеть от чужих сигналов;</li>
+        <li>хочешь понимать логику движения рынка;</li>
+        <li>хочешь получить структурированную базу вместо сотен разрозненных роликов из YouTube.</li>
+      </ul>
+      <a href="#apply" class="btn btn--ghost">Оставить заявку</a>
+    </div>
+
+    <aside class="fit__note">
+      <h3>А если не подойдет?</h3>
+      <p>
+        Курс не про быстрые деньги и не про готовые сигналы. Если нужен результат
+        «завтра и без усилий» — это не сюда.
+      </p>
+      <p>
+        Здесь про понимание процесса, дисциплину и решения, которые ты принимаешь сам.
+      </p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ АВТОР ============ -->
+<section class="section" id="author">
+  <div class="container author">
+    <div class="author__media">
+      <div class="author__photo" role="img" aria-label="Фото основателя школы">
+        <span class="author__ph">Фото</span>
+      </div>
+      <div class="author__badge">
+        <b>6 лет</b>
+        <span>в финансовых рынках и брокерском бизнесе</span>
+      </div>
+    </div>
+
+    <div class="author__copy">
+      <span class="tag">Автор курса</span>
+      <h2 class="section__title">Основатель MARKETLOGIC</h2>
+      <p>
+        6 лет работы в сфере финансовых рынков, брокерского бизнеса и развития
+        финансовых проектов.
+      </p>
+      <p>
+        За это время я увидел одну повторяющуюся проблему: начинающим трейдерам
+        показывают результат, но почти не объясняют сам процесс принятия решения.
+      </p>
+      <p>
+        Поэтому появился MARKETLOGIC — обучение, где сложные вещи объясняются простым языком,
+        а основной упор сделан на практику, управление риском и понимание рынка.
+      </p>
+
+      <ul class="author__facts">
+        <li><b>Простой язык</b><span>без перегруза терминами</span></li>
+        <li><b>Упор на практику</b><span>разборы реальных ситуаций</span></li>
+        <li><b>Риск в основе</b><span>капитал важнее одной сделки</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--alt" id="faq">
+  <div class="container container--narrow">
+    <div class="section__head">
+      <span class="tag">Вопросы</span>
+      <h2 class="section__title">Частые вопросы</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Нужен ли опыт, чтобы начать?</summary>
+        <p>Нет. Программа начинается с устройства рынка и базовых терминов, поэтому подходит тем, кто никогда не торговал.</p>
+      </details>
+      <details>
+        <summary>Сколько времени займет обучение?</summary>
+        <p>Модули проходятся в своем темпе. Формат рассчитан на то, чтобы совмещать обучение с работой или учебой.</p>
+      </details>
+      <details>
+        <summary>Вы даете готовые сигналы?</summary>
+        <p>Нет. Цель обучения — научить принимать торговые решения самостоятельно и понимать их основание.</p>
+      </details>
+      <details>
+        <summary>Нужно ли сразу торговать на реальные деньги?</summary>
+        <p>Нет. Отработать навыки можно без риска для капитала, а к реальным сделкам переходить уже с готовым планом и правилами риска.</p>
+      </details>
+      <details>
+        <summary>Курс гарантирует доход?</summary>
+        <p>Нет. Торговля на финансовых рынках связана с риском потери вложенных средств. Обучение дает знания и систему принятия решений, но не обещает прибыли.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / ЗАЯВКА ============ -->
+<section class="cta" id="apply">
+  <div class="cta__glow" aria-hidden="true"></div>
+  <div class="container cta__inner">
+    <div class="cta__copy">
+      <h2>Начни с понимания, а не с угадывания</h2>
+      <p>
+        Оставь заявку — расскажем про формат, программу и с чего начать,
+        если опыта пока нет совсем.
+      </p>
+      <ul class="cta__points">
+        <li>Разберем твой уровень и цели</li>
+        <li>Покажем структуру программы</li>
+        <li>Ответим на вопросы без давления</li>
+      </ul>
+    </div>
+
+    <form class="form" id="applyForm" novalidate>
+      <div class="field">
+        <label for="name">Как тебя зовут</label>
+        <input id="name" name="name" type="text" placeholder="Имя" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="contact">Telegram или телефон</label>
+        <input id="contact" name="contact" type="text" placeholder="@username или +7…" required>
+      </div>
+      <div class="field">
+        <label for="level">Твой опыт</label>
+        <select id="level" name="level">
+          <option>Никогда не торговал</option>
+          <option>Пробовал, но без системы</option>
+          <option>Торгую, хочу структуру</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn--lg btn--block">Отправить заявку</button>
+      <p class="form__policy">
+        Нажимая кнопку, ты соглашаешься с политикой обработки персональных данных.
+      </p>
+      <p class="form__ok" id="formOk" hidden>Заявка отправлена — свяжемся с тобой в ближайшее время.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#top" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8 11L13 15L22 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 5h6v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="logo__text">MARKET<b>LOGIC</b></span>
+      </a>
+      <nav class="footer__links" aria-label="Ссылки в подвале">
+        <a href="#program">Программа</a>
+        <a href="#result">Результат</a>
+        <a href="#author">Автор</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#apply">Заявка</a>
+      </nav>
+    </div>
+
+    <p class="disclaimer">
+      <b>Предупреждение о риске.</b> Торговля на финансовых рынках связана с высоким риском
+      и может привести к потере части или всех вложенных средств. Материалы сайта носят
+      образовательный характер, не являются индивидуальной инвестиционной рекомендацией
+      и не гарантируют доходность. Принимайте решения самостоятельно и оценивайте
+      допустимый для себя уровень риска.
+    </p>
+
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> MARKETLOGIC</span>
+      <span>Политика конфиденциальности · Публичная оферта</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
