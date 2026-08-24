@@ -12,7 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -171,12 +172,12 @@
     </div>
 
     <ul class="pains">
-      <li><span class="pains__n">01</span><h3>Торговля без системы</h3><p>Каждая сделка по новым правилам. Результат нельзя ни повторить, ни разобрать.</p></li>
-      <li><span class="pains__n">02</span><h3>Сделки на эмоциях</h3><p>Вход по азарту, выход по страху. Решение принимает состояние, а не расчёт.</p></li>
-      <li><span class="pains__n">03</span><h3>Непонимание риска</h3><p>Одна неудачная сделка забирает то, что копилось неделями.</p></li>
-      <li><span class="pains__n">04</span><h3>Чужие сигналы</h3><p>Копируете входы, но не понимаете логику — и не можете её повторить.</p></li>
-      <li><span class="pains__n">05</span><h3>Нет базовых знаний</h3><p>Пробелы в основе ломают всё, что строится сверху.</p></li>
-      <li><span class="pains__n">06</span><h3>Спешка заработать</h3><p>Попытка получить результат за неделю почти всегда стоит депозита.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3.5l9 10H21"/><path d="M4 17h3.5l9-10H21"/><path d="M18 4l3 3-3 3"/><path d="M18 14l3 3-3 3"/></svg></span><h3>Торговля без системы</h3><p>Каждая сделка по новым правилам. Результат нельзя ни повторить, ни разобрать.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13H11l-1 9 8.5-11H12l1-9z"/></svg></span><h3>Сделки на эмоциях</h3><p>Вход по азарту, выход по страху. Решение принимает состояние, а не расчёт.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v6c0 4.5-3 7.8-7.5 9-4.5-1.2-7.5-4.5-7.5-9V6L12 3z"/><path d="M12 8.5v4"/><path d="M12 16h.01"/></svg></span><h3>Непонимание риска</h3><p>Одна неудачная сделка забирает то, что копилось неделями.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></span><h3>Чужие сигналы</h3><p>Копируете входы, но не понимаете логику — и не можете её повторить.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H11v16H5.5A2.5 2.5 0 0 0 3 21.5V5.5z"/><path d="M21 5.5A2.5 2.5 0 0 0 18.5 3H13v16h5.5a2.5 2.5 0 0 1 2.5 2.5V5.5z"/></svg></span><h3>Нет базовых знаний</h3><p>Пробелы в основе ломают всё, что строится сверху.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9.5V13l2.5 2"/><path d="M9 2h6"/><path d="M19.5 5.5l1.5 1.5"/></svg></span><h3>Спешка заработать</h3><p>Попытка получить результат за неделю почти всегда стоит депозита.</p></li>
     </ul>
   </div>
 </section>
@@ -216,13 +217,13 @@
         <figure class="ph ph--cv">
           <span class="ph__ic" aria-hidden="true">👤</span>
           <b>Фото трейдера</b>
-          <span class="ph__hint">за рабочим местом<br>760 × 950 px</span>
+          <span class="ph__hint">за рабочим местом<br>900 × 900 px</span>
         </figure>
       </aside>
 
       <div class="cv__body">
         <div class="cv__row">
-          <span class="cv__lbl">Должность</span>
+          <span class="cv__lbl">Кем станете</span>
           <div class="cv__val">
             <span class="cv__post">Трейдер</span>
             <span class="cv__sub">торгует по собственной системе, а не по чужим сигналам</span>
@@ -232,119 +233,34 @@
         <div class="cv__row">
           <span class="cv__lbl">Навыки</span>
           <ul class="cv__skills">
-        <li>Понимать устройство финансовых рынков</li>
-        <li>Читать график и видеть структуру рынка</li>
-        <li>Находить точки входа и выхода</li>
-        <li>Применять технический анализ</li>
-        <li>Рассчитывать риск на сделку</li>
-        <li>Определять размер позиции</li>
-        <li>Работать со Stop Loss и Take Profit</li>
-        <li>Составлять собственный торговый план</li>
-        <li>Контролировать эмоции в торговле</li>
+            <li>Понимать устройство финансовых рынков</li>
+            <li>Читать график и видеть структуру рынка</li>
+            <li>Находить точки входа и выхода</li>
+            <li>Применять технический анализ</li>
+            <li>Рассчитывать риск на сделку</li>
+            <li>Определять размер позиции</li>
+            <li>Работать со Stop Loss и Take Profit</li>
+            <li>Составлять собственный торговый план</li>
+            <li>Контролировать эмоции в торговле</li>
           </ul>
         </div>
 
         <div class="cv__row cv__row--last">
           <span class="cv__lbl">Инструменты</span>
           <ul class="cv__tools">
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip0">Forex</button>
-            <div class="tool__pop" id="tip0" hidden>
-              <b>Forex</b>
-              <p>Рынок обмена валют: торговля идёт валютными парами — например, EUR/USD.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip1">Акции</button>
-            <div class="tool__pop" id="tip1" hidden>
-              <b>Акции</b>
-              <p>Ценная бумага, дающая долю в компании. Цена зависит от результатов бизнеса и настроений рынка.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip2">Индексы</button>
-            <div class="tool__pop" id="tip2" hidden>
-              <b>Индексы</b>
-              <p>Корзина из множества акций. Показывает, как себя чувствует рынок или отрасль в целом.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip3">Сырьё</button>
-            <div class="tool__pop" id="tip3" hidden>
-              <b>Сырьё</b>
-              <p>Нефть, золото, газ и другие товары, которые торгуются на бирже.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip4">Торговый терминал</button>
-            <div class="tool__pop" id="tip4" hidden>
-              <b>Торговый терминал</b>
-              <p>Программа, через которую вы открываете и закрываете сделки и следите за графиком.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip5">Ордера</button>
-            <div class="tool__pop" id="tip5" hidden>
-              <b>Ордера</b>
-              <p>Заявка на покупку или продажу: по текущей цене или по заранее заданной.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip6">Объём позиции</button>
-            <div class="tool__pop" id="tip6" hidden>
-              <b>Объём позиции</b>
-              <p>Размер сделки. Подбирается так, чтобы возможный убыток не превышал допустимый риск.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip7">Stop Loss</button>
-            <div class="tool__pop" id="tip7" hidden>
-              <b>Stop Loss</b>
-              <p>Защитный уровень: сделка закроется автоматически, если цена пойдёт против вас.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip8">Take Profit</button>
-            <div class="tool__pop" id="tip8" hidden>
-              <b>Take Profit</b>
-              <p>Уровень фиксации прибыли: сделка закроется автоматически при достижении цели.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip9">Уровни</button>
-            <div class="tool__pop" id="tip9" hidden>
-              <b>Уровни</b>
-              <p>Цены, у которых рынок ранее разворачивался или останавливался. Ориентир для решений.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip10">Риск-менеджмент</button>
-            <div class="tool__pop" id="tip10" hidden>
-              <b>Риск-менеджмент</b>
-              <p>Правила, ограничивающие потери: сколько можно потерять в одной сделке и за серию.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
-          <li class="tool">
-            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip11">Торговый план</button>
-            <div class="tool__pop" id="tip11" hidden>
-              <b>Торговый план</b>
-              <p>Свод собственных правил: когда входить, где ставить стоп, когда фиксировать прибыль.</p>
-              <button type="button" class="tool__ok">Понятно</button>
-            </div>
-          </li>
+            <li>Forex</li>
+            <li>Акции</li>
+            <li>Индексы</li>
+            <li>Сырьё</li>
+            <li>Торговый терминал</li>
+            <li>Ордера</li>
+            <li>Объём позиции</li>
+            <li>Stop Loss</li>
+            <li>Take Profit</li>
+            <li>Уровни</li>
+            <li>Риск-менеджмент</li>
+            <li>Торговый план</li>
           </ul>
-          <span class="cv__hint">Нажмите на любой, чтобы посмотреть объяснение</span>
         </div>
       </div>
     </div>
@@ -369,7 +285,7 @@
           <span class="mod__t">Основы рынка</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Что такое Forex, акции, индексы и сырьевые товары. Кто двигает рынок и откуда берётся цена.</p></div>
+        <div class="mod__b"><p>Что такое Forex, акции, индексы и сырьевые товары — и чем они отличаются друг от друга. Кто участвует в торгах: банки, фонды, брокеры и частные трейдеры. Откуда берётся цена, что такое спрос и предложение, спред и ликвидность. Как устроена торговая сессия и почему рынок ведёт себя по-разному в разное время суток.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -377,7 +293,7 @@
           <span class="mod__t">Торговый терминал</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Открытие и закрытие сделки, типы ордеров, объём позиции, Stop Loss и Take Profit. Уверенная работа с интерфейсом.</p></div>
+        <div class="mod__b"><p>Установка и настройка терминала под себя: графики, таймфреймы, рабочие пространства. Как открыть и закрыть сделку, чем рыночный ордер отличается от отложенного. Объём позиции и от чего он зависит. Установка Stop Loss и Take Profit, перенос стопа, частичное закрытие. Разбор типичных ошибок при работе с интерфейсом, из-за которых теряют деньги на ровном месте.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -385,7 +301,7 @@
           <span class="mod__t">Чтение графика</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Тренды, уровни, структура рынка, импульсы и коррекции. Как график превращается в понятную картину.</p></div>
+        <div class="mod__b"><p>Свечи и что они показывают. Тренд, флет и смена направления. Как размечать уровни поддержки и сопротивления и почему цена на них реагирует. Структура рынка: импульсы и коррекции, максимумы и минимумы. Работа с несколькими таймфреймами: как старший график задаёт контекст для младшего.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -393,7 +309,7 @@
           <span class="mod__t">Технический анализ</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Как искать потенциальные точки входа и выхода и на чём основывать торговое решение.</p></div>
+        <div class="mod__b"><p>Основные графические модели и как их не «додумывать». Скользящие средние и объёмы как вспомогательный инструмент. Как искать потенциальные точки входа и выхода и формулировать сценарий: что должно произойти, чтобы идея сработала, и что её отменяет. Почему индикаторы не дают сигналов сами по себе и как использовать их в связке с ценой.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -401,7 +317,7 @@
           <span class="mod__t">Риск-менеджмент</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Сколько можно рисковать в одной сделке и почему сохранение капитала важнее одной прибыльной позиции.</p></div>
+        <div class="mod__b"><p>Сколько допустимо рисковать в одной сделке и за серию сделок. Как рассчитать объём позиции от размера стопа и депозита. Соотношение риска к прибыли и почему сделки с плохим соотношением не окупаются даже при высокой точности. Просадка: какая нормальна, а какая говорит о поломке системы. Почему сохранение капитала важнее одной прибыльной позиции.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -409,7 +325,7 @@
           <span class="mod__t">Психология трейдера</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Жадность, страх, желание отыграться и другие ошибки, которые обнуляют даже хорошую стратегию.</p></div>
+        <div class="mod__b"><p>Жадность, страх, желание отыграться и переторговка — как это выглядит на практике и к чему приводит. Что делать после серии убыточных сделок. Почему нельзя двигать стоп и досиживать убыток «до разворота». Дисциплина как навык: чек-лист перед входом и разбор сделок после закрытия.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -417,7 +333,7 @@
           <span class="mod__t">Торговая стратегия</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Собираем знания в единую систему с понятными правилами входа, выхода и управления позицией.</p></div>
+        <div class="mod__b"><p>Собираем всё в единую систему: рынок и инструмент, таймфрейм, условия входа, уровень стопа, цель по прибыли, правила сопровождения позиции. Что делать, если сценарий не сработал. Как вести журнал сделок и по каким метрикам оценивать стратегию. Как дорабатывать систему, не ломая её после каждой убыточной сделки.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -425,7 +341,7 @@
           <span class="mod__t">Практика</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Разбор рынка и сделок вместе с преподавателем — теория закрепляется на реальных примерах.</p></div>
+        <div class="mod__b"><p>Разбор текущего рынка вместе с преподавателем: размечаем график, формулируем сценарии, считаем риск. Анализ ваших сделок — что было сделано по правилам, а что на эмоциях. Отработка навыка без риска для капитала и переход к реальным сделкам уже с готовым планом.</p></div>
       </li>
     </ol>
 
@@ -443,7 +359,7 @@
 <section class="sec" id="format">
   <div class="wrap">
     <div class="sec__head">
-      <h2 class="h2">Обучение проходит в спокойном темпе</h2>
+      <h2 class="h2">Обучение проходит в собственном темпе</h2>
       <p class="sec__lead">Без марафонов и «секретных стратегий» — последовательная теория и разборы на практике.</p>
     </div>
 
@@ -457,16 +373,10 @@
 
       <div class="fmt__media">
         <!-- ЗАМЕНИТЬ: <img src="img/format-1.jpg" alt="Интерфейс курса"> -->
-        <figure class="ph ph--tall">
+        <figure class="ph ph--fill">
           <span class="ph__ic" aria-hidden="true">💻</span>
           <b>Скрин платформы</b>
           <span class="ph__hint">список уроков / личный кабинет<br>900 × 1100 px</span>
-        </figure>
-        <!-- ЗАМЕНИТЬ: <img src="img/format-2.jpg" alt="Разбор в чате"> -->
-        <figure class="ph ph--wide">
-          <span class="ph__ic" aria-hidden="true">💬</span>
-          <b>Скрин обратной связи</b>
-          <span class="ph__hint">разбор в чате / комментарий<br>900 × 520 px</span>
         </figure>
       </div>
     </div>
@@ -475,25 +385,40 @@
 
 <!-- ═══════ КОМУ ПОДОЙДЁТ ═══════ -->
 <section class="sec sec--gray" id="fit">
-  <div class="wrap fit">
-    <div class="fit__main">
+  <div class="wrap">
+    <div class="sec__head">
       <h2 class="h2">Начать сможет каждый — даже без опыта</h2>
-      <p class="sec__lead">Курс для вас, если вы:</p>
-      <ul class="check">
-        <li>никогда раньше не занимались трейдингом;</li>
-        <li>уже пробовали торговать, но делаете это хаотично;</li>
-        <li>устали зависеть от чужих сигналов;</li>
-        <li>хотите понимать логику движения рынка;</li>
-        <li>хотите структурированную базу вместо сотен разрозненных роликов из YouTube.</li>
-      </ul>
-      <a href="#apply" class="btn">Оставить заявку</a>
+      <p class="sec__lead">Но честнее сразу сказать и то, кому курс не подойдёт.</p>
     </div>
 
-    <aside class="nope">
-      <h3>А кому не подойдёт</h3>
-      <p>Курс не про быстрые деньги и не про готовые сигналы. Если нужен результат «завтра и без усилий» — это не сюда.</p>
-      <p>Здесь про понимание процесса, дисциплину и решения, которые вы принимаете сами.</p>
-    </aside>
+    <div class="fit">
+      <div class="fit__card fit__card--yes">
+        <span class="fit__lbl">Курс для вас, если вы</span>
+        <ul class="check">
+          <li>никогда раньше не занимались трейдингом</li>
+          <li>уже пробовали торговать, но делаете это хаотично</li>
+          <li>устали зависеть от чужих сигналов</li>
+          <li>хотите понимать логику движения рынка</li>
+          <li>хотите структурированную базу вместо сотен роликов из YouTube</li>
+        </ul>
+      </div>
+
+      <div class="fit__card fit__card--no">
+        <span class="fit__lbl">Кому не подойдёт</span>
+        <ul class="cross">
+          <li>нужны готовые сигналы, а не понимание рынка</li>
+          <li>ждёте результат «завтра и без усилий»</li>
+          <li>не готовы вести торговый план и считать риск</li>
+          <li>ищете гарантию дохода</li>
+          <li>рассчитываете удвоить депозит за неделю</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fit__cta">
+      <p>Если первое описание про вас — начните с заявки, разберём ваш уровень и цели.</p>
+      <a href="#apply" class="btn">Оставить заявку</a>
+    </div>
   </div>
 </section>
 
@@ -519,7 +444,7 @@
       <ul class="author__facts">
         <li><b>Простой язык</b><span>без перегруза терминами</span></li>
         <li><b>Упор на практику</b><span>разборы реальных ситуаций</span></li>
-        <li><b>Риск в основе</b><span>капитал важнее одной сделки</span></li>
+        <li><b>Сохранение капитала</b><span>приоритет выше прибыли</span></li>
       </ul>
     </div>
   </div>
@@ -570,26 +495,58 @@
       </ul>
     </div>
 
-    <form class="form" id="applyForm" novalidate>
-      <div class="fld">
-        <label for="name">Как вас зовут</label>
-        <input id="name" name="name" type="text" placeholder="Имя" autocomplete="name" required>
+    <form class="form" id="leadForm" novalidate method="post" action="https://op15.apihost.nl/form">
+      <input type="hidden" name="form_type" value="REPLACE_WITH_YOUR_FORM_TYPE_TOKEN">
+      <input type="hidden" name="campaign"  value="REPLACE_WITH_YOUR_CAMPAIGN_TOKEN">
+      <input type="hidden" name="api_key"   value="">
+      <input type="hidden" name="form_name" value="marketlogic-landing">
+
+      <!-- UTM / click-id / referrer — заполняется JS из URL, cookie и sessionStorage -->
+      <input type="hidden" name="utm_source"   value="">
+      <input type="hidden" name="utm_medium"   value="">
+      <input type="hidden" name="utm_campaign" value="">
+      <input type="hidden" name="utm_content"  value="">
+      <input type="hidden" name="utm_term"     value="">
+      <input type="hidden" name="gclid"        value="">
+      <input type="hidden" name="fbclid"       value="">
+      <input type="hidden" name="yclid"        value="">
+      <input type="hidden" name="referer1"     value="">
+      <input type="hidden" name="referrer"     value="">
+      <input type="hidden" name="landing_url"  value="">
+
+      <h3 class="form__t">Оставить заявку</h3>
+      <p class="form__sub">Свяжемся, ответим на вопросы и подскажем, с чего начать.</p>
+
+      <div class="form-row">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" placeholder="Иван" required autocomplete="given-name">
+        <span class="err-msg">Только буквы, пробелы и дефисы</span>
       </div>
-      <div class="fld">
-        <label for="contact">Telegram или телефон</label>
-        <input id="contact" name="contact" type="text" placeholder="@username или +7…" required>
+
+      <div class="form-row">
+        <label for="surname">Фамилия</label>
+        <input type="text" id="surname" name="surname" placeholder="Иванов" required autocomplete="family-name">
+        <span class="err-msg">Только буквы, пробелы и дефисы</span>
       </div>
-      <div class="fld">
-        <label for="level">Ваш опыт</label>
-        <select id="level" name="level">
-          <option>Никогда не торговал</option>
-          <option>Пробовал, но без системы</option>
-          <option>Торгую, хочу структуру</option>
-        </select>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        <span class="err-msg">Укажите корректный email</span>
       </div>
-      <button type="submit" class="btn btn--lg btn--block">Отправить заявку</button>
-      <p class="form__pol">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
-      <p class="form__ok" id="formOk" hidden>Заявка отправлена — свяжемся с вами в ближайшее время.</p>
+
+      <div class="form-row">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="(912) 345-67-89" required minlength="6" maxlength="20" autocomplete="tel">
+        <span class="err-msg">Укажите корректный телефон</span>
+      </div>
+
+      <label class="form-consent">
+        <input type="checkbox" id="consent" required checked>
+        <span>Соглашаюсь с <a href="privacy.html" target="_blank" rel="noopener">политикой обработки персональных данных</a> и получением обратной связи.</span>
+      </label>
+
+      <button type="submit" class="btn btn--lg btn--block form-submit" id="submitBtn">Отправить заявку</button>
     </form>
   </div>
 </section>
@@ -630,6 +587,7 @@
   </div>
 </footer>
 
-<script src="script.js?v=6"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
+<script src="script.js?v=7"></script>
 </body>
 </html>

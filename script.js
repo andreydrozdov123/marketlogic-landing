@@ -86,68 +86,129 @@
   }
 
 
-  /* всплывающие объяснения инструментов */
-  var tools = document.querySelectorAll('.tool');
+  /* ── UTM / атрибуция ── */
+  (function () {
+    var TRACK_KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid','yclid'];
+    var STORAGE_KEY = 'ml:attribution';
+    var REFERER_COOKIE = 'ml_referer1';
+    var REFERER_TTL = 90;
 
-  var closeTools = function () {
-    Array.prototype.forEach.call(tools, function (t) {
-      t.classList.remove('is-open');
-      t.querySelector('.tool__pop').hidden = true;
-      t.querySelector('.tool__btn').setAttribute('aria-expanded', 'false');
+    var setCookie = function (n, v, days) {
+      var d = new Date();
+      d.setTime(d.getTime() + days * 864e5);
+      document.cookie = n + '=' + encodeURIComponent(v) + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+    };
+    var getCookie = function (n) {
+      var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
+      return m ? decodeURIComponent(m[2]) : '';
+    };
+
+    var params = new URLSearchParams(window.location.search);
+    var stored = {};
+    try { stored = JSON.parse(sessionStorage.getItem(STORAGE_KEY)) || {}; } catch (e) {}
+    TRACK_KEYS.forEach(function (k) {
+      var v = params.get(k);
+      if (v) stored[k] = v;
     });
+    try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(stored)); } catch (e) {}
+
+    var urlReferer = params.get('referer1');
+    if (urlReferer) setCookie(REFERER_COOKIE, urlReferer, REFERER_TTL);
+    var referer1 = urlReferer || getCookie(REFERER_COOKIE) || '';
+
+    var form = document.getElementById('leadForm');
+    if (!form) return;
+    TRACK_KEYS.forEach(function (k) {
+      var el = form.querySelector('input[name="' + k + '"]');
+      if (el && stored[k]) el.value = stored[k];
+    });
+    var r1 = form.querySelector('input[name="referer1"]');
+    if (r1 && referer1) r1.value = referer1;
+    var rf = form.querySelector('input[name="referrer"]');
+    if (rf) rf.value = document.referrer || '';
+    var lu = form.querySelector('input[name="landing_url"]');
+    if (lu) lu.value = window.location.href;
+  })();
+
+  /* ── телефон с выбором страны ── */
+  var iti = null;
+  var phoneEl = document.getElementById('phone');
+  if (phoneEl && window.intlTelInput) {
+    iti = window.intlTelInput(phoneEl, {
+      initialCountry: 'auto',
+      geoIpLookup: function (success) {
+        fetch('https://api.country.is/')
+          .then(function (r) { return r.json(); })
+          .then(function (d) { success(d.country || 'RU'); })
+          .catch(function () { success('RU'); });
+      },
+      preferredCountries: ['ru','kz','uz','by','kg','am','az','ge','ua','md'],
+      separateDialCode: true,
+      autoPlaceholder: 'aggressive',
+      customPlaceholder: function (p) { return p.replace(/^([08])[\s.]+/, ''); },
+      utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/utils.js'
+    });
+  }
+
+  /* ── отправка заявки ── */
+  var form = document.getElementById('leadForm');
+  var submitBtn = document.getElementById('submitBtn');
+
+  var NAME_RE = /^[^\-\s][\p{L}\s\-]+$/u;
+  var EMAIL_RE = /^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/i;
+
+  var validPhone = function (v) {
+    if (iti && typeof iti.isValidNumber === 'function') return iti.isValidNumber();
+    return v.replace(/\D/g, '').length >= 6;
   };
 
-  Array.prototype.forEach.call(tools, function (t) {
-    var btn = t.querySelector('.tool__btn');
-    var pop = t.querySelector('.tool__pop');
-    var ok = t.querySelector('.tool__ok');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      var open = t.classList.contains('is-open');
-      closeTools();
-      if (!open) {
-        t.classList.add('is-open');
-        pop.hidden = false;
-        btn.setAttribute('aria-expanded', 'true');
+      Array.prototype.forEach.call(form.querySelectorAll('.form-row'), function (r) {
+        r.classList.remove('error');
+      });
+
+      var name = form.name.value.trim();
+      var surname = form.surname.value.trim();
+      var email = form.email.value.trim();
+      var phone = form.phone.value.trim();
+      var valid = true;
+
+      var fail = function (el) { el.closest('.form-row').classList.add('error'); valid = false; };
+
+      if (!name || !NAME_RE.test(name)) fail(form.name);
+      if (!surname || !NAME_RE.test(surname)) fail(form.surname);
+      if (!email || !EMAIL_RE.test(email)) fail(form.email);
+      if (!phone || !validPhone(phone)) fail(form.phone);
+
+      if (!form.consent.checked) {
+        form.consent.style.outline = '2px solid #E5342F';
+        setTimeout(function () { form.consent.style.outline = ''; }, 2500);
+        valid = false;
       }
+      if (!valid) return;
+
+      if (iti && typeof iti.getNumber === 'function') form.phone.value = iti.getNumber();
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Отправляем…';
+
+      fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+        .then(function () { window.location.replace('thank-you.html'); })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Отправить заявку';
+          alert('Не удалось отправить заявку. Попробуйте ещё раз.');
+        });
     });
 
-    pop.addEventListener('click', function (e) { e.stopPropagation(); });
-    ok.addEventListener('click', closeTools);
-  });
-
-  document.addEventListener('click', closeTools);
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeTools();
-  });
-
-  /* форма заявки (заглушка) */
-  var form = document.getElementById('applyForm');
-  var ok = document.getElementById('formOk');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    var required = form.querySelectorAll('input[required]');
-    var valid = true;
-
-    Array.prototype.forEach.call(required, function (input) {
-      var empty = !input.value.trim();
-      input.classList.toggle('is-error', empty);
-      if (empty) valid = false;
+    Array.prototype.forEach.call(form.querySelectorAll('input'), function (input) {
+      input.addEventListener('input', function () {
+        var row = input.closest('.form-row');
+        if (row) row.classList.remove('error');
+      });
     });
-
-    if (!valid) return;
-
-    // TODO: подключить отправку (Telegram-бот, CRM или почтовый вебхук)
-    ok.hidden = false;
-    form.reset();
-  });
-
-  Array.prototype.forEach.call(form.querySelectorAll('input'), function (input) {
-    input.addEventListener('input', function () {
-      input.classList.remove('is-error');
-    });
-  });
+  }
 })();
