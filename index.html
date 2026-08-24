@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=17">
+<link rel="stylesheet" href="styles.css?v=18">
 </head>
 <body>
 
@@ -133,12 +133,10 @@
       </article>
 
       <article class="card3">
-        <!-- ЗАМЕНИТЬ: <img src="img/practice-2.jpg" alt="Расчет риска"> -->
-        <figure class="ph ph--card">
-          <span class="ph__ic" aria-hidden="true">⚖️</span>
-          <b>Скрин расчёта риска</b>
-          <span class="ph__hint">калькулятор позиции / терминал<br>800 × 600 px</span>
-        </figure>
+        <picture>
+          <source srcset="img/risk.webp" type="image/webp">
+          <img src="img/risk.jpg" width="900" height="675" alt="Калькулятор позиции: риск на сделку, стоп-лосс и размер позиции" loading="lazy" decoding="async">
+        </picture>
         <div class="card3__txt">
           <span class="card3__n">02</span>
           <h3>Считать риск</h3>
@@ -748,6 +746,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=17"></script>
+<script src="script.js?v=18"></script>
 </body>
 </html>
