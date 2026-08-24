@@ -57,7 +57,7 @@
 
   /* появление блоков при скролле */
   var targets = document.querySelectorAll(
-    '.sec__head, .pains li, .skills li, .mod, .quote, .answer, .fmt li, ' +
+    '.sec__head, .card3, .pains li, .mod, .cv, .fmt__list li, ' +
     '.check, .nope, .author__media, .author__copy, .faq details, ' +
     '.apply__copy, .form, .prog__cta'
   );
@@ -84,6 +84,43 @@
       io.observe(el);
     });
   }
+
+
+  /* всплывающие объяснения инструментов */
+  var tools = document.querySelectorAll('.tool');
+
+  var closeTools = function () {
+    Array.prototype.forEach.call(tools, function (t) {
+      t.classList.remove('is-open');
+      t.querySelector('.tool__pop').hidden = true;
+      t.querySelector('.tool__btn').setAttribute('aria-expanded', 'false');
+    });
+  };
+
+  Array.prototype.forEach.call(tools, function (t) {
+    var btn = t.querySelector('.tool__btn');
+    var pop = t.querySelector('.tool__pop');
+    var ok = t.querySelector('.tool__ok');
+
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = t.classList.contains('is-open');
+      closeTools();
+      if (!open) {
+        t.classList.add('is-open');
+        pop.hidden = false;
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    pop.addEventListener('click', function (e) { e.stopPropagation(); });
+    ok.addEventListener('click', closeTools);
+  });
+
+  document.addEventListener('click', closeTools);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeTools();
+  });
 
   /* форма заявки (заглушка) */
   var form = document.getElementById('applyForm');

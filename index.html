@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -207,29 +207,146 @@
   <div class="wrap">
     <div class="sec__head">
       <h2 class="h2">Освоите все базовые навыки трейдера</h2>
-      <p class="sec__lead">Девять умений, которые складываются в одну рабочую систему.</p>
+      <p class="sec__lead">Так будет выглядеть ваш набор умений после курса.</p>
     </div>
 
-    <ul class="skills">
-      <li><h3>Устройство рынков</h3><p>Как работают финансовые рынки и кто на них влияет.</p></li>
-      <li><h3>Чтение графиков</h3><p>Видеть структуру движения, а не хаотичные свечи.</p></li>
-      <li><h3>Поиск возможностей</h3><p>Находить потенциальные точки входа и выхода.</p></li>
-      <li><h3>Торговая логика</h3><p>Формировать обоснование сделки до её открытия.</p></li>
-      <li><h3>Расчёт риска</h3><p>Понимать, чем и сколько вы рискуете в каждой сделке.</p></li>
-      <li><h3>Размер позиции</h3><p>Определять объём так, чтобы одна ошибка не стала последней.</p></li>
-      <li><h3>Stop Loss и Take Profit</h3><p>Ставить защитные и целевые уровни осмысленно.</p></li>
-      <li><h3>Торговый план</h3><p>Собственный свод правил вместо интуиции.</p></li>
-      <li><h3>Контроль эмоций</h3><p>Не решать на страхе, жадности и желании отыграться.</p></li>
-    </ul>
+    <div class="cv">
+      <aside class="cv__side">
+        <!-- ЗАМЕНИТЬ: <img src="img/cv.jpg" alt="Трейдер за работой"> -->
+        <figure class="ph ph--cv">
+          <span class="ph__ic" aria-hidden="true">👤</span>
+          <b>Фото трейдера</b>
+          <span class="ph__hint">за рабочим местом<br>760 × 950 px</span>
+        </figure>
+      </aside>
 
-    <div class="tools">
-      <span class="tools__lbl">Инструменты и понятия из курса</span>
-      <ul class="tools__list">
-        <li>Forex</li><li>Акции</li><li>Индексы</li><li>Сырьё</li><li>Торговый терминал</li>
-        <li>Ордера</li><li>Объём позиции</li><li>Stop Loss</li><li>Take Profit</li>
-        <li>Тренд</li><li>Уровни</li><li>Структура рынка</li><li>Импульс и коррекция</li>
-        <li>Технический анализ</li><li>Риск-менеджмент</li><li>Торговый план</li>
-      </ul>
+      <div class="cv__body">
+        <div class="cv__row">
+          <span class="cv__lbl">Должность</span>
+          <div class="cv__val">
+            <span class="cv__post">Трейдер</span>
+            <span class="cv__sub">торгует по собственной системе, а не по чужим сигналам</span>
+          </div>
+        </div>
+
+        <div class="cv__row">
+          <span class="cv__lbl">Навыки</span>
+          <ul class="cv__skills">
+        <li>Понимать устройство финансовых рынков</li>
+        <li>Читать график и видеть структуру рынка</li>
+        <li>Находить точки входа и выхода</li>
+        <li>Применять технический анализ</li>
+        <li>Рассчитывать риск на сделку</li>
+        <li>Определять размер позиции</li>
+        <li>Работать со Stop Loss и Take Profit</li>
+        <li>Составлять собственный торговый план</li>
+        <li>Контролировать эмоции в торговле</li>
+          </ul>
+        </div>
+
+        <div class="cv__row cv__row--last">
+          <span class="cv__lbl">Инструменты</span>
+          <ul class="cv__tools">
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip0">Forex</button>
+            <div class="tool__pop" id="tip0" hidden>
+              <b>Forex</b>
+              <p>Рынок обмена валют: торговля идёт валютными парами — например, EUR/USD.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip1">Акции</button>
+            <div class="tool__pop" id="tip1" hidden>
+              <b>Акции</b>
+              <p>Ценная бумага, дающая долю в компании. Цена зависит от результатов бизнеса и настроений рынка.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip2">Индексы</button>
+            <div class="tool__pop" id="tip2" hidden>
+              <b>Индексы</b>
+              <p>Корзина из множества акций. Показывает, как себя чувствует рынок или отрасль в целом.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip3">Сырьё</button>
+            <div class="tool__pop" id="tip3" hidden>
+              <b>Сырьё</b>
+              <p>Нефть, золото, газ и другие товары, которые торгуются на бирже.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip4">Торговый терминал</button>
+            <div class="tool__pop" id="tip4" hidden>
+              <b>Торговый терминал</b>
+              <p>Программа, через которую вы открываете и закрываете сделки и следите за графиком.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip5">Ордера</button>
+            <div class="tool__pop" id="tip5" hidden>
+              <b>Ордера</b>
+              <p>Заявка на покупку или продажу: по текущей цене или по заранее заданной.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip6">Объём позиции</button>
+            <div class="tool__pop" id="tip6" hidden>
+              <b>Объём позиции</b>
+              <p>Размер сделки. Подбирается так, чтобы возможный убыток не превышал допустимый риск.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip7">Stop Loss</button>
+            <div class="tool__pop" id="tip7" hidden>
+              <b>Stop Loss</b>
+              <p>Защитный уровень: сделка закроется автоматически, если цена пойдёт против вас.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip8">Take Profit</button>
+            <div class="tool__pop" id="tip8" hidden>
+              <b>Take Profit</b>
+              <p>Уровень фиксации прибыли: сделка закроется автоматически при достижении цели.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip9">Уровни</button>
+            <div class="tool__pop" id="tip9" hidden>
+              <b>Уровни</b>
+              <p>Цены, у которых рынок ранее разворачивался или останавливался. Ориентир для решений.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip10">Риск-менеджмент</button>
+            <div class="tool__pop" id="tip10" hidden>
+              <b>Риск-менеджмент</b>
+              <p>Правила, ограничивающие потери: сколько можно потерять в одной сделке и за серию.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          <li class="tool">
+            <button type="button" class="tool__btn" aria-expanded="false" aria-controls="tip11">Торговый план</button>
+            <div class="tool__pop" id="tip11" hidden>
+              <b>Торговый план</b>
+              <p>Свод собственных правил: когда входить, где ставить стоп, когда фиксировать прибыль.</p>
+              <button type="button" class="tool__ok">Понятно</button>
+            </div>
+          </li>
+          </ul>
+          <span class="cv__hint">Нажмите на любой, чтобы посмотреть объяснение</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -513,6 +630,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=5"></script>
 </body>
 </html>
