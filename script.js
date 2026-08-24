@@ -57,9 +57,9 @@
 
   /* появление блоков при скролле */
   var targets = document.querySelectorAll(
-    '.sec__head, .card3, .miss li, .fall, .bn, .tools, .stage, ' +
-    '.step, .fmt__media figure, .cmp__col, .author__media, .author__copy, ' +
-    '.faq details, .apply__copy, .form, .prog__cta, .claim__in > *'
+    '.sec__head, .pains li, .skills li, .mod, .quote, .answer, .fmt li, ' +
+    '.check, .nope, .author__media, .author__copy, .faq details, ' +
+    '.apply__copy, .form, .prog__cta'
   );
 
   if ('IntersectionObserver' in window) {
