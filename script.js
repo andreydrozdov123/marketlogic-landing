@@ -1,30 +1,30 @@
 (function () {
   'use strict';
 
-  /* ---------- год в футере ---------- */
+  /* год в футере */
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
-  /* ---------- шапка: тень при скролле ---------- */
-  var nav = document.getElementById('nav');
+  /* шапка при скролле */
+  var hdr = document.getElementById('hdr');
   var onScroll = function () {
-    nav.classList.toggle('is-stuck', window.scrollY > 8);
+    hdr.classList.toggle('is-stuck', window.scrollY > 8);
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  /* ---------- мобильное меню ---------- */
+  /* мобильное меню */
   var burger = document.getElementById('burger');
-  var menu = document.getElementById('mobileMenu');
+  var menu = document.getElementById('mmenu');
 
   var closeMenu = function () {
     menu.hidden = true;
     burger.setAttribute('aria-expanded', 'false');
   };
+  closeMenu();
 
   burger.addEventListener('click', function () {
-    var open = burger.getAttribute('aria-expanded') === 'true';
-    if (open) {
+    if (burger.getAttribute('aria-expanded') === 'true') {
       closeMenu();
     } else {
       menu.hidden = false;
@@ -37,15 +37,13 @@
   });
 
   window.addEventListener('resize', function () {
-    if (window.innerWidth >= 860) closeMenu();
+    if (window.innerWidth >= 900) closeMenu();
   });
 
-  /* ---------- аккордеон программы ---------- */
-  var modules = document.querySelectorAll('.module');
-  Array.prototype.forEach.call(modules, function (mod, i) {
-    var head = mod.querySelector('.module__head');
+  /* аккордеон программы */
+  Array.prototype.forEach.call(document.querySelectorAll('.mod'), function (mod, i) {
+    var head = mod.querySelector('.mod__h');
 
-    // первый модуль раскрыт по умолчанию
     if (i === 0) {
       mod.classList.add('is-open');
       head.setAttribute('aria-expanded', 'true');
@@ -57,16 +55,16 @@
     });
   });
 
-  /* ---------- появление блоков при скролле ---------- */
+  /* появление блоков при скролле */
   var targets = document.querySelectorAll(
-    '.section__head, .pain, .skills li, .module, .quote, .pain__answer, ' +
-    '.fit__copy, .fit__note, .author__media, .author__copy, .faq details, ' +
-    '.cta__copy, .form, .program__cta'
+    '.sec__head, .pains li, .skills li, .mod, .quote, .answer, .fmt li, ' +
+    '.check, .nope, .author__media, .author__copy, .faq details, ' +
+    '.apply__copy, .form, .prog__cta'
   );
 
   if ('IntersectionObserver' in window) {
     Array.prototype.forEach.call(targets, function (el, i) {
-      el.classList.add('reveal');
+      el.classList.add('rv');
       el.style.transitionDelay = Math.min(i % 6, 5) * 45 + 'ms';
     });
 
@@ -74,12 +72,12 @@
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
+            entry.target.classList.add('on');
             io.unobserve(entry.target);
           }
         });
       },
-      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+      { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }
     );
 
     Array.prototype.forEach.call(targets, function (el) {
@@ -87,7 +85,7 @@
     });
   }
 
-  /* ---------- форма заявки (заглушка) ---------- */
+  /* форма заявки (заглушка) */
   var form = document.getElementById('applyForm');
   var ok = document.getElementById('formOk');
 
