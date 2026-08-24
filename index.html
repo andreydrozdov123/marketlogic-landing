@@ -3,32 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MARKETLOGIC — обучение трейдингу с нуля</title>
+<title>MARKETLOGIC — курс трейдинга с нуля</title>
 <meta name="description" content="Практический курс трейдинга для начинающих: устройство рынков, чтение графика, технический анализ, риск-менеджмент и собственная торговая стратегия.">
-<meta name="theme-color" content="#051C2C">
+<meta name="theme-color" content="#3F2AFF">
 <meta property="og:title" content="MARKETLOGIC — научитесь понимать рынок, а не угадывать его">
 <meta property="og:description" content="Практический курс трейдинга для начинающих. 8 модулей: от первых терминов до собственного торгового плана.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
-<!-- ══════════════ HEADER ══════════════ -->
+<!-- ═══════ ПРОМО-ПОЛОСА (сюда можно поставить акцию/скидку) ═══════ -->
+<div class="promo">
+  <div class="wrap promo__in">
+    <span class="promo__txt">Набор открыт · Обучение стартует в любой день</span>
+    <a href="#apply" class="promo__link">Записаться →</a>
+  </div>
+</div>
+
+<!-- ═══════ ШАПКА ═══════ -->
 <header class="hdr" id="hdr">
   <div class="wrap hdr__in">
     <a href="#top" class="logo" aria-label="MARKETLOGIC">
       <span class="logo__mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8.5 11L13 15L22 5.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8.5 11L13 15L22 5.5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
       <span class="logo__txt">MARKET<b>LOGIC</b></span>
     </a>
 
     <nav class="hdr__nav" aria-label="Разделы">
+      <a href="#practice">Чему научитесь</a>
       <a href="#program">Программа</a>
-      <a href="#result">Чему научитесь</a>
       <a href="#format">Как проходит</a>
       <a href="#author">Автор</a>
       <a href="#faq">Вопросы</a>
@@ -42,8 +50,8 @@
   </div>
 
   <div class="mmenu" id="mmenu" hidden>
+    <a href="#practice">Чему научитесь</a>
     <a href="#program">Программа</a>
-    <a href="#result">Чему научитесь</a>
     <a href="#format">Как проходит</a>
     <a href="#author">Автор</a>
     <a href="#faq">Вопросы</a>
@@ -53,179 +61,186 @@
 
 <main id="top">
 
-<!-- ══════════════ HERO ══════════════ -->
+<!-- ═══════ ПЕРВЫЙ ЭКРАН ═══════ -->
 <section class="hero">
-  <div class="hero__bg" aria-hidden="true"></div>
   <div class="wrap hero__in">
-
     <div class="hero__copy">
-      <span class="pill"><i></i> Онлайн-курс · Старт в любой день</span>
+      <span class="pill">Онлайн-курс для начинающих</span>
 
       <h1 class="hero__h1">
-        Научитесь <span class="u-mark">понимать рынок</span>,<br>
-        а не угадывать его
+        Научитесь понимать&nbsp;рынок,<br>
+        а не <span class="u-mark">угадывать</span> его
       </h1>
 
       <p class="hero__lead">
-        Практический курс трейдинга для начинающих. От первых терминов и устройства
-        финансовых рынков — до самостоятельного анализа и совершения сделок.
+        От первых терминов и устройства финансовых рынков — до самостоятельного
+        анализа графика и осознанных сделок.
       </p>
 
       <div class="hero__btns">
-        <a href="#apply" class="btn btn--lg">Начать обучение</a>
-        <a href="#program" class="btn btn--lg btn--outline">Программа курса</a>
+        <a href="#apply" class="btn btn--lg">Записаться на курс</a>
+        <a href="#program" class="btn btn--lg btn--line">Смотреть программу</a>
       </div>
 
       <p class="hero__note">
-        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.4l4 4 8-8.8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.4l4 4 8-8.8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Подходит даже тем, кто никогда раньше не торговал
       </p>
     </div>
 
-    <div class="hero__visual" aria-hidden="true">
-      <div class="term">
-        <div class="term__bar">
-          <span class="term__dots"><i></i><i></i><i></i></span>
-          <span class="term__name">EUR / USD · H1</span>
-        </div>
-
-        <div class="term__body">
-          <svg class="gr" viewBox="0 0 340 190" preserveAspectRatio="none" role="img">
-            <defs>
-              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#0082FF" stop-opacity=".30"/>
-                <stop offset="100%" stop-color="#0082FF" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <g class="gr__grid">
-              <line x1="0" y1="38" x2="340" y2="38"/><line x1="0" y1="76" x2="340" y2="76"/>
-              <line x1="0" y1="114" x2="340" y2="114"/><line x1="0" y1="152" x2="340" y2="152"/>
-            </g>
-            <path class="gr__area" d="M0,156 L28,148 L56,154 L84,124 L112,133 L140,101 L168,114 L196,79 L224,92 L252,58 L280,71 L308,40 L340,28 L340,190 L0,190 Z" fill="url(#g1)"/>
-            <path class="gr__line" d="M0,156 L28,148 L56,154 L84,124 L112,133 L140,101 L168,114 L196,79 L224,92 L252,58 L280,71 L308,40 L340,28"/>
-            <line class="gr__lvl" x1="0" y1="80" x2="340" y2="80"/>
-            <circle class="gr__dot" cx="308" cy="40" r="5"/>
-          </svg>
-
-          <div class="term__legend">
-            <span><i class="k k--lvl"></i>Уровень</span>
-            <span><i class="k k--imp"></i>Импульс</span>
-            <span><i class="k k--cor"></i>Коррекция</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="tip tip--risk">
-        <span class="tip__l">Риск на сделку</span>
-        <span class="tip__v">1&nbsp;%</span>
-        <span class="tip__h">рассчитан до входа</span>
-      </div>
-
-      <div class="tip tip--plan">
-        <span class="tip__l">Торговый план</span>
-        <span class="tip__v">Готов</span>
-        <span class="tip__h">вход · стоп · цель</span>
-      </div>
-    </div>
+    <!-- ЗАМЕНИТЬ НА ФОТО: <img src="img/hero.jpg" alt="Автор курса за работой"> -->
+    <figure class="ph ph--hero">
+      <span class="ph__ic" aria-hidden="true">🖼</span>
+      <b>Главное фото</b>
+      <span class="ph__hint">Автор / рабочее место с графиками<br>1200 × 1400 px, вертикальное</span>
+    </figure>
   </div>
 
   <div class="wrap">
     <ul class="facts">
-      <li><b>8</b><span>модулей<br>программы</span></li>
-      <li><b>0</b><span>требуемого<br>опыта</span></li>
-      <li><b>6 лет</b><span>опыта автора<br>на рынках</span></li>
-      <li><b>Свой</b><span>темп обучения<br>без дедлайнов</span></li>
+      <li><b>8</b><span>модулей программы</span></li>
+      <li><b>0</b><span>требуемого опыта</span></li>
+      <li><b>6 лет</b><span>опыта автора на рынках</span></li>
+      <li><b>Свой</b><span>темп без дедлайнов</span></li>
     </ul>
   </div>
 </section>
 
-<!-- ══════════════ ЛЕНТА ══════════════ -->
-<section class="strip" aria-hidden="true">
-  <div class="strip__track">
-    <span>Структура рынка</span><i>◆</i><span>Уровни</span><i>◆</i><span>Риск-менеджмент</span><i>◆</i>
-    <span>Stop Loss / Take Profit</span><i>◆</i><span>Технический анализ</span><i>◆</i>
-    <span>Психология трейдера</span><i>◆</i><span>Торговый план</span><i>◆</i><span>Размер позиции</span><i>◆</i>
-    <span>Структура рынка</span><i>◆</i><span>Уровни</span><i>◆</i><span>Риск-менеджмент</span><i>◆</i>
-    <span>Stop Loss / Take Profit</span><i>◆</i><span>Технический анализ</span><i>◆</i>
-    <span>Психология трейдера</span><i>◆</i><span>Торговый план</span><i>◆</i><span>Размер позиции</span><i>◆</i>
+<!-- ═══════ НА ПРАКТИКЕ РАЗБЕРЁТЕСЬ ═══════ -->
+<section class="sec" id="practice">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">На практике разберётесь, как это работает</h2>
+      <p class="sec__lead">Три навыка, из которых собирается любая осознанная сделка.</p>
+    </div>
+
+    <div class="cards3">
+      <article class="card3">
+        <!-- ЗАМЕНИТЬ: <img src="img/practice-1.jpg" alt="Разбор графика"> -->
+        <figure class="ph ph--card">
+          <span class="ph__ic" aria-hidden="true">📈</span>
+          <b>Скрин графика</b>
+          <span class="ph__hint">разметка уровней и структуры<br>800 × 600 px</span>
+        </figure>
+        <div class="card3__txt">
+          <span class="card3__n">01</span>
+          <h3>Читать график</h3>
+          <p>Тренды, уровни, структура рынка, импульсы и коррекции — вместо хаотичных свечей понятная картина.</p>
+        </div>
+      </article>
+
+      <article class="card3">
+        <!-- ЗАМЕНИТЬ: <img src="img/practice-2.jpg" alt="Расчет риска"> -->
+        <figure class="ph ph--card">
+          <span class="ph__ic" aria-hidden="true">⚖️</span>
+          <b>Скрин расчёта риска</b>
+          <span class="ph__hint">калькулятор позиции / терминал<br>800 × 600 px</span>
+        </figure>
+        <div class="card3__txt">
+          <span class="card3__n">02</span>
+          <h3>Считать риск</h3>
+          <p>Сколько допустимо потерять в одной сделке и какой объём позиции этому соответствует.</p>
+        </div>
+      </article>
+
+      <article class="card3">
+        <!-- ЗАМЕНИТЬ: <img src="img/practice-3.jpg" alt="Сделка в терминале"> -->
+        <figure class="ph ph--card">
+          <span class="ph__ic" aria-hidden="true">🖥</span>
+          <b>Скрин терминала</b>
+          <span class="ph__hint">открытая сделка со стопом и целью<br>800 × 600 px</span>
+        </figure>
+        <div class="card3__txt">
+          <span class="card3__n">03</span>
+          <h3>Совершать сделки</h3>
+          <p>Ордера, объём, Stop Loss и Take Profit — уверенная работа с терминалом без лишних кликов.</p>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
-<!-- ══════════════ БОЛЬ ══════════════ -->
-<section class="sec" id="pain">
+<!-- ═══════ БОЛЬ ═══════ -->
+<section class="sec sec--gray" id="pain">
   <div class="wrap">
     <div class="sec__head">
-      <span class="tag tag--red">Почему не получается</span>
       <h2 class="h2">Почему большинство новичков теряют деньги</h2>
       <p class="sec__lead">
-        Не потому что трейдинг невозможно освоить. Обычно причина проще —
-        и она повторяется почти у всех.
+        Не потому что трейдинг невозможно освоить. Обычно причина проще — и она повторяется почти у всех.
       </p>
     </div>
 
     <ul class="pains">
       <li><span class="pains__n">01</span><h3>Торговля без системы</h3><p>Каждая сделка по новым правилам. Результат нельзя ни повторить, ни разобрать.</p></li>
-      <li><span class="pains__n">02</span><h3>Сделки на эмоциях</h3><p>Вход по азарту, выход по страху. Решение принимает состояние, а не расчет.</p></li>
+      <li><span class="pains__n">02</span><h3>Сделки на эмоциях</h3><p>Вход по азарту, выход по страху. Решение принимает состояние, а не расчёт.</p></li>
       <li><span class="pains__n">03</span><h3>Непонимание риска</h3><p>Одна неудачная сделка забирает то, что копилось неделями.</p></li>
-      <li><span class="pains__n">04</span><h3>Чужие сигналы</h3><p>Копируете входы, но не понимаете логику — и не можете ее повторить.</p></li>
+      <li><span class="pains__n">04</span><h3>Чужие сигналы</h3><p>Копируете входы, но не понимаете логику — и не можете её повторить.</p></li>
       <li><span class="pains__n">05</span><h3>Нет базовых знаний</h3><p>Пробелы в основе ломают всё, что строится сверху.</p></li>
       <li><span class="pains__n">06</span><h3>Спешка заработать</h3><p>Попытка получить результат за неделю почти всегда стоит депозита.</p></li>
     </ul>
-
-    <div class="answer">
-      <div class="answer__ic" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8.5 11L13 15L22 5.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <p>
-        <b>MARKETLOGIC — про другой подход.</b>
-        Сначала вы учитесь понимать, что происходит на рынке и почему,
-        и только потом принимаете торговые решения.
-      </p>
-      <a href="#program" class="btn btn--white">Смотреть программу</a>
-    </div>
   </div>
 </section>
 
-<!-- ══════════════ РЕЗУЛЬТАТ ══════════════ -->
-<section class="sec sec--soft" id="result">
-  <div class="wrap">
-    <div class="sec__head">
-      <span class="tag">Результат</span>
-      <h2 class="h2">Чему вы научитесь</h2>
-      <p class="sec__lead">Девять конкретных навыков, которые складываются в одну рабочую систему.</p>
+<!-- ═══════ ИНДИГО-БЛОК ═══════ -->
+<section class="claim">
+  <div class="wrap claim__in">
+    <div>
+      <h2 class="h2">Наша задача — не дать вам «сигнал»</h2>
+      <p>
+        Задача — научить принимать торговое решение самостоятельно. Сначала вы понимаете,
+        что происходит на рынке и почему, и только потом открываете сделку.
+      </p>
+      <a href="#program" class="btn btn--white">Смотреть программу</a>
     </div>
 
-    <ul class="skills">
-      <li><span class="skills__ic">📊</span><h3>Устройство рынков</h3><p>Как работают финансовые рынки и кто на них влияет.</p></li>
-      <li><span class="skills__ic">📈</span><h3>Чтение графиков</h3><p>Видеть структуру движения, а не хаотичные свечи.</p></li>
-      <li><span class="skills__ic">🔎</span><h3>Поиск возможностей</h3><p>Находить потенциальные точки входа и выхода.</p></li>
-      <li><span class="skills__ic">🧠</span><h3>Торговая логика</h3><p>Формировать обоснование сделки до ее открытия.</p></li>
-      <li><span class="skills__ic">⚖️</span><h3>Расчет риска</h3><p>Понимать, чем и сколько вы рискуете в каждой сделке.</p></li>
-      <li><span class="skills__ic">💰</span><h3>Размер позиции</h3><p>Определять объем так, чтобы одна ошибка не стала последней.</p></li>
-      <li><span class="skills__ic">🛑</span><h3>Stop Loss и Take Profit</h3><p>Ставить защитные и целевые уровни осмысленно.</p></li>
-      <li><span class="skills__ic">📋</span><h3>Торговый план</h3><p>Собственный свод правил вместо интуиции.</p></li>
-      <li><span class="skills__ic">😤</span><h3>Контроль эмоций</h3><p>Не решать на страхе, жадности и желании отыграться.</p></li>
-    </ul>
-
-    <figure class="quote">
-      <blockquote>
-        Наша задача — не дать вам «сигнал».<br>
-        <span class="u-mark u-mark--y">Задача — научить принимать решение самостоятельно.</span>
-      </blockquote>
+    <!-- ЗАМЕНИТЬ: <img src="img/claim.jpg" alt="Разбор сделки"> -->
+    <figure class="ph ph--claim ph--onDark">
+      <span class="ph__ic" aria-hidden="true">🎬</span>
+      <b>Кадр из урока</b>
+      <span class="ph__hint">разбор сделки на экране<br>1000 × 700 px</span>
     </figure>
   </div>
 </section>
 
-<!-- ══════════════ ПРОГРАММА ══════════════ -->
-<section class="sec" id="program">
+<!-- ═══════ НАВЫКИ ═══════ -->
+<section class="sec" id="result">
   <div class="wrap">
-    <div class="sec__head sec__head--row">
-      <div>
-        <span class="tag">Программа</span>
-        <h2 class="h2">8 модулей — от нуля до собственной системы</h2>
-      </div>
+    <div class="sec__head">
+      <h2 class="h2">Освоите все базовые навыки трейдера</h2>
+      <p class="sec__lead">Девять умений, которые складываются в одну рабочую систему.</p>
+    </div>
+
+    <ul class="skills">
+      <li><h3>Устройство рынков</h3><p>Как работают финансовые рынки и кто на них влияет.</p></li>
+      <li><h3>Чтение графиков</h3><p>Видеть структуру движения, а не хаотичные свечи.</p></li>
+      <li><h3>Поиск возможностей</h3><p>Находить потенциальные точки входа и выхода.</p></li>
+      <li><h3>Торговая логика</h3><p>Формировать обоснование сделки до её открытия.</p></li>
+      <li><h3>Расчёт риска</h3><p>Понимать, чем и сколько вы рискуете в каждой сделке.</p></li>
+      <li><h3>Размер позиции</h3><p>Определять объём так, чтобы одна ошибка не стала последней.</p></li>
+      <li><h3>Stop Loss и Take Profit</h3><p>Ставить защитные и целевые уровни осмысленно.</p></li>
+      <li><h3>Торговый план</h3><p>Собственный свод правил вместо интуиции.</p></li>
+      <li><h3>Контроль эмоций</h3><p>Не решать на страхе, жадности и желании отыграться.</p></li>
+    </ul>
+
+    <div class="tools">
+      <span class="tools__lbl">Инструменты и понятия из курса</span>
+      <ul class="tools__list">
+        <li>Forex</li><li>Акции</li><li>Индексы</li><li>Сырьё</li><li>Торговый терминал</li>
+        <li>Ордера</li><li>Объём позиции</li><li>Stop Loss</li><li>Take Profit</li>
+        <li>Тренд</li><li>Уровни</li><li>Структура рынка</li><li>Импульс и коррекция</li>
+        <li>Технический анализ</li><li>Риск-менеджмент</li><li>Торговый план</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ПРОГРАММА ═══════ -->
+<section class="sec sec--gray" id="program">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">Программа обучения</h2>
       <p class="sec__lead">
-        Последовательный путь: сначала база и терминал, затем анализ, риск и психология,
+        8 модулей: сначала база и терминал, затем анализ, риск и психология,
         и только в конце — сборка стратегии и практика.
       </p>
     </div>
@@ -237,7 +252,7 @@
           <span class="mod__t">Основы рынка</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Что такое Forex, акции, индексы и сырьевые товары. Кто двигает рынок и откуда берется цена.</p></div>
+        <div class="mod__b"><p>Что такое Forex, акции, индексы и сырьевые товары. Кто двигает рынок и откуда берётся цена.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -245,7 +260,7 @@
           <span class="mod__t">Торговый терминал</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Открытие и закрытие сделки, типы ордеров, объем позиции, Stop Loss и Take Profit. Уверенная работа с интерфейсом.</p></div>
+        <div class="mod__b"><p>Открытие и закрытие сделки, типы ордеров, объём позиции, Stop Loss и Take Profit. Уверенная работа с интерфейсом.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -261,7 +276,7 @@
           <span class="mod__t">Технический анализ</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
-        <div class="mod__b"><p>Как искать потенциальные точки входа и выхода и на чем основывать торговое решение.</p></div>
+        <div class="mod__b"><p>Как искать потенциальные точки входа и выхода и на чём основывать торговое решение.</p></div>
       </li>
       <li class="mod">
         <button class="mod__h" aria-expanded="false">
@@ -299,54 +314,54 @@
 
     <div class="prog__cta">
       <div>
-        <b>Программа проходится в своем темпе</b>
-        <span>Можно совмещать с работой или учебой</span>
+        <b>Программа проходится в своём темпе</b>
+        <span>Можно совмещать с работой или учёбой</span>
       </div>
       <a href="#apply" class="btn">Записаться на курс</a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ ФОРМАТ ══════════════ -->
-<section class="sec sec--dark" id="format">
+<!-- ═══════ КАК ПРОХОДИТ ═══════ -->
+<section class="sec" id="format">
   <div class="wrap">
     <div class="sec__head">
-      <span class="tag tag--onDark">Формат</span>
-      <h2 class="h2">Как проходит обучение</h2>
+      <h2 class="h2">Обучение проходит в спокойном темпе</h2>
       <p class="sec__lead">Без марафонов и «секретных стратегий» — последовательная теория и разборы на практике.</p>
     </div>
 
-    <ul class="fmt">
-      <li>
-        <span class="fmt__n">01</span>
-        <h3>Пошаговые модули</h3>
-        <p>Материал идет от простого к сложному — не нужно собирать знания по роликам из YouTube.</p>
-      </li>
-      <li>
-        <span class="fmt__n">02</span>
-        <h3>Практика на графике</h3>
-        <p>Каждая тема закрепляется разбором реальных ситуаций на рынке.</p>
-      </li>
-      <li>
-        <span class="fmt__n">03</span>
-        <h3>Ответы на вопросы</h3>
-        <p>Можно уточнить непонятное и получить обратную связь по своим разборам.</p>
-      </li>
-      <li>
-        <span class="fmt__n">04</span>
-        <h3>Свой темп</h3>
-        <p>Без жестких дедлайнов: обучение совмещается с работой или учебой.</p>
-      </li>
-    </ul>
+    <div class="fmt">
+      <ul class="fmt__list">
+        <li><span class="fmt__n">01</span><div><h3>Пошаговые модули</h3><p>Материал идёт от простого к сложному — не нужно собирать знания по роликам из YouTube.</p></div></li>
+        <li><span class="fmt__n">02</span><div><h3>Практика на графике</h3><p>Каждая тема закрепляется разбором реальных ситуаций на рынке.</p></div></li>
+        <li><span class="fmt__n">03</span><div><h3>Ответы на вопросы</h3><p>Можно уточнить непонятное и получить обратную связь по своим разборам.</p></div></li>
+        <li><span class="fmt__n">04</span><div><h3>Свой темп</h3><p>Без жёстких дедлайнов: обучение совмещается с работой или учёбой.</p></div></li>
+      </ul>
+
+      <div class="fmt__media">
+        <!-- ЗАМЕНИТЬ: <img src="img/format-1.jpg" alt="Интерфейс курса"> -->
+        <figure class="ph ph--tall">
+          <span class="ph__ic" aria-hidden="true">💻</span>
+          <b>Скрин платформы</b>
+          <span class="ph__hint">список уроков / личный кабинет<br>900 × 1100 px</span>
+        </figure>
+        <!-- ЗАМЕНИТЬ: <img src="img/format-2.jpg" alt="Разбор в чате"> -->
+        <figure class="ph ph--wide">
+          <span class="ph__ic" aria-hidden="true">💬</span>
+          <b>Скрин обратной связи</b>
+          <span class="ph__hint">разбор в чате / комментарий<br>900 × 520 px</span>
+        </figure>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ══════════════ КОМУ ПОДОЙДЕТ ══════════════ -->
-<section class="sec sec--soft" id="fit">
+<!-- ═══════ КОМУ ПОДОЙДЁТ ═══════ -->
+<section class="sec sec--gray" id="fit">
   <div class="wrap fit">
-    <div>
-      <span class="tag">Кому подойдет</span>
-      <h2 class="h2">Курс для вас, если вы</h2>
+    <div class="fit__main">
+      <h2 class="h2">Начать сможет каждый — даже без опыта</h2>
+      <p class="sec__lead">Курс для вас, если вы:</p>
       <ul class="check">
         <li>никогда раньше не занимались трейдингом;</li>
         <li>уже пробовали торговать, но делаете это хаотично;</li>
@@ -358,27 +373,28 @@
     </div>
 
     <aside class="nope">
-      <span class="nope__ic" aria-hidden="true">✕</span>
-      <h3>А кому не подойдет</h3>
+      <h3>А кому не подойдёт</h3>
       <p>Курс не про быстрые деньги и не про готовые сигналы. Если нужен результат «завтра и без усилий» — это не сюда.</p>
       <p>Здесь про понимание процесса, дисциплину и решения, которые вы принимаете сами.</p>
     </aside>
   </div>
 </section>
 
-<!-- ══════════════ АВТОР ══════════════ -->
+<!-- ═══════ АВТОР ═══════ -->
 <section class="sec" id="author">
   <div class="wrap author">
     <div class="author__media">
-      <div class="author__photo" role="img" aria-label="Фото автора курса">
-        <span>Фото автора</span>
-      </div>
+      <!-- ЗАМЕНИТЬ: <img src="img/author.jpg" alt="Автор курса"> -->
+      <figure class="ph ph--author">
+        <span class="ph__ic" aria-hidden="true">👤</span>
+        <b>Портрет автора</b>
+        <span class="ph__hint">вертикальное фото<br>1000 × 1250 px</span>
+      </figure>
       <div class="author__chip"><b>6 лет</b><span>в финансовых рынках и брокерском бизнесе</span></div>
     </div>
 
     <div class="author__copy">
-      <span class="tag">Автор курса</span>
-      <h2 class="h2">Кто ведет обучение</h2>
+      <h2 class="h2">Учиться будете у практика</h2>
       <p>6 лет работы в сфере финансовых рынков, брокерского бизнеса и развития финансовых проектов.</p>
       <p>За это время стало очевидно одно: начинающим трейдерам показывают результат, но почти не объясняют сам процесс принятия решения.</p>
       <p>Поэтому появился MARKETLOGIC — обучение, где сложные вещи объясняются простым языком, а основной упор сделан на практику, управление риском и понимание рынка.</p>
@@ -392,12 +408,11 @@
   </div>
 </section>
 
-<!-- ══════════════ FAQ ══════════════ -->
-<section class="sec sec--soft" id="faq">
+<!-- ═══════ FAQ ═══════ -->
+<section class="sec sec--gray" id="faq">
   <div class="wrap wrap--narrow">
     <div class="sec__head">
-      <span class="tag">Вопросы</span>
-      <h2 class="h2">Частые вопросы</h2>
+      <h2 class="h2">Часто задаваемые вопросы</h2>
     </div>
 
     <div class="faq">
@@ -406,11 +421,11 @@
         <p>Нет. Программа начинается с устройства рынка и базовых терминов, поэтому подходит тем, кто никогда не торговал.</p>
       </details>
       <details>
-        <summary>Сколько времени займет обучение?</summary>
-        <p>Модули проходятся в своем темпе. Формат рассчитан на то, чтобы совмещать обучение с работой или учебой.</p>
+        <summary>Сколько времени займёт обучение?</summary>
+        <p>Модули проходятся в своём темпе. Формат рассчитан на то, чтобы совмещать обучение с работой или учёбой.</p>
       </details>
       <details>
-        <summary>Вы даете готовые сигналы?</summary>
+        <summary>Вы даёте готовые сигналы?</summary>
         <p>Нет. Цель обучения — научить принимать торговые решения самостоятельно и понимать их основание.</p>
       </details>
       <details>
@@ -419,28 +434,26 @@
       </details>
       <details>
         <summary>Курс гарантирует доход?</summary>
-        <p>Нет. Торговля на финансовых рынках связана с риском потери вложенных средств. Обучение дает знания и систему принятия решений, но не обещает прибыли.</p>
+        <p>Нет. Торговля на финансовых рынках связана с риском потери вложенных средств. Обучение даёт знания и систему принятия решений, но не обещает прибыли.</p>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ══════════════ ЗАЯВКА ══════════════ -->
+<!-- ═══════ ЗАЯВКА ═══════ -->
 <section class="apply" id="apply">
   <div class="wrap apply__in">
     <div class="apply__copy">
-      <span class="tag tag--onDark">Заявка</span>
-      <h2 class="h2">Начните с понимания, а не с угадывания</h2>
-      <p>Оставьте заявку — расскажем про формат, программу и с чего начать, если опыта пока нет совсем.</p>
+      <h2 class="h2">Записаться на курс или получить консультацию</h2>
+      <p>Расскажем про формат, программу и с чего начать, если опыта пока нет совсем.</p>
       <ul class="apply__pts">
-        <li>Разберем ваш уровень и цели</li>
+        <li>Разберём ваш уровень и цели</li>
         <li>Покажем структуру программы</li>
         <li>Ответим на вопросы без давления</li>
       </ul>
     </div>
 
     <form class="form" id="applyForm" novalidate>
-      <h3 class="form__t">Записаться на курс</h3>
       <div class="fld">
         <label for="name">Как вас зовут</label>
         <input id="name" name="name" type="text" placeholder="Имя" autocomplete="name" required>
@@ -466,19 +479,19 @@
 
 </main>
 
-<!-- ══════════════ FOOTER ══════════════ -->
+<!-- ═══════ ПОДВАЛ ═══════ -->
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__top">
       <a href="#top" class="logo">
         <span class="logo__mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8.5 11L13 15L22 5.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M2 18L8.5 11L13 15L22 5.5" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <span class="logo__txt">MARKET<b>LOGIC</b></span>
       </a>
       <nav class="ftr__nav" aria-label="Ссылки в подвале">
+        <a href="#practice">Чему научитесь</a>
         <a href="#program">Программа</a>
-        <a href="#result">Чему научитесь</a>
         <a href="#format">Как проходит</a>
         <a href="#author">Автор</a>
         <a href="#apply">Заявка</a>
@@ -500,6 +513,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
