@@ -106,8 +106,12 @@ figure{margin:0}
   border-radius:9px;background:var(--ink);color:#fff;
 }
 .logo__mark svg{width:19px;height:19px}
-.logo__txt{font-weight:600;font-size:15px;letter-spacing:.03em;color:var(--ink-3)}
-.logo__txt b{font-weight:900;color:var(--ink)}
+.logo__txt{display:flex;flex-direction:column;line-height:1.05}
+.logo__txt b{font-size:17px;font-weight:800;letter-spacing:-.03em;color:var(--ink)}
+.logo__txt em{font-style:normal;color:var(--ind)}
+.logo__txt i{margin-top:3px;font-style:normal;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.logo__mark{border-radius:10px}
+.logo__mark svg{width:21px;height:21px}
 
 .hdr__nav{display:none;gap:24px;margin-left:auto;font-size:14.5px;font-weight:600;color:var(--ink-2)}
 .hdr__nav a:hover{color:var(--ind)}
@@ -347,6 +351,35 @@ figure{margin:0}
 .author__facts b{display:block;font-size:15.5px}
 .author__facts span{display:block;margin-top:2px;font-size:13px;color:var(--ink-2)}
 
+/* ---------- ОБ АКАДЕМИИ ---------- */
+.sec--dark{background:var(--ink);color:#fff}
+.about{display:grid;gap:28px}
+.about__tag{
+  display:inline-block;margin-bottom:16px;padding:7px 14px;border-radius:8px;
+  background:rgba(255,255,255,.12);
+  font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+}
+.about__copy p{margin-top:18px;color:rgba(255,255,255,.74);font-size:16px;line-height:1.6}
+.about__vals{display:grid;gap:12px;margin-top:30px}
+.about__vals li{
+  padding:18px 20px;border-radius:var(--r);
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+}
+.about__vals b{display:block;font-size:15.5px;letter-spacing:-.02em}
+.about__vals span{display:block;margin-top:4px;font-size:13.5px;color:rgba(255,255,255,.62)}
+
+.about__mission{
+  align-self:start;padding:30px 28px;border-radius:var(--r-lg);
+  background:var(--ind);
+}
+.about__ic{
+  display:grid;place-items:center;width:48px;height:48px;margin-bottom:20px;
+  border-radius:13px;background:rgba(255,255,255,.18);color:#fff;
+}
+.about__ic svg{width:26px;height:26px}
+.about__quote{font-size:19px;font-weight:700;line-height:1.4;letter-spacing:-.025em}
+.about__sign{display:block;margin-top:18px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+
 /* ---------- FAQ ---------- */
 .faq{display:grid;gap:10px}
 .faq details{background:#fff;border-radius:var(--r-lg)}
@@ -466,6 +499,9 @@ figure{margin:0}
   .fit__cta{grid-template-columns:1fr auto;align-items:center;padding:28px 34px}
   .fit__cta .btn{justify-self:end}
   .author{grid-template-columns:.82fr 1.18fr;gap:64px;align-items:center}
+  .about{grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+  .about__vals{grid-template-columns:1fr 1fr;gap:14px}
+  .about__mission{padding:38px 34px;position:sticky;top:100px}
   .apply{padding:96px 0}
   .apply__in{grid-template-columns:1fr .8fr;gap:60px}
   .form{padding:32px}

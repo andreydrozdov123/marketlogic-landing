@@ -1,4 +1,4 @@
-# MARKETLOGIC — лендинг обучающего курса по трейдингу
+# MarketPro Academy — лендинг курса по трейдингу
 
 Статическая страница (HTML/CSS/JS, без сборки). Стилистика — светлый EdTech по мотивам Skillbox.
 
@@ -30,7 +30,7 @@
 | Автор | `img/author.jpg` | 1000 × 1250 | портрет, вертикальное |
 
 ## Что ещё поменять
-- Название бренда: поиск `MARKETLOGIC` в `index.html`
+- Название бренда: поиск `MarketPro Academy` в `index.html`
 - Промо-полоса сверху: блок `.promo` — туда ставится акция/скидка
 - Форма: как в teamset_landing — POST на `https://op15.apihost.nl/form`, UTM-атрибуция, intl-tel-input, редирект на `thank-you.html`. Перед запуском подставить токены `form_type` и `campaign` в `index.html`
 - `privacy.html` — черновик, заменить на юридический текст
