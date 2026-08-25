@@ -299,23 +299,23 @@ figure{margin:0}
 .seg__a{color:var(--ink-2);font-size:14.5px;line-height:1.5}
 
 .nofit{
-  display:grid;gap:14px;margin-top:12px;padding:20px 22px;
-  border:1px solid var(--line);border-radius:var(--r-lg);
+  display:grid;gap:16px;margin-top:12px;padding:22px 24px;
+  background:#FDF3F2;border-radius:var(--r-lg);
 }
-.nofit__lbl{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.nofit__lbl{
+  display:flex;align-items:center;gap:9px;
+  font-size:14.5px;font-weight:700;letter-spacing:-.01em;color:#A32B27;white-space:nowrap;
+}
+.nofit__lbl::before{
+  content:"";flex:0 0 20px;width:20px;height:20px;border-radius:6px;
+  background:#F6D9D7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M3 3l6 6M9 3l-6 6' stroke='%23A32B27' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/11px no-repeat;
+}
 .nofit__list{display:flex;flex-wrap:wrap;gap:8px}
 .nofit__list li{
-  position:relative;padding:8px 13px 8px 30px;border-radius:8px;background:var(--gray);
-  font-size:13.5px;color:var(--ink-2);
+  padding:8px 14px;border-radius:100px;background:#fff;
+  border:1px solid #F1D5D3;
+  font-size:13.5px;font-weight:500;color:#8C3A36;
 }
-.nofit__list li::before{
-  content:"";position:absolute;left:12px;top:50%;width:9px;height:1.8px;margin-top:-1px;
-  background:var(--ink-3);border-radius:2px;
-}
-
-.fit__cta{display:grid;gap:14px;margin-top:20px;align-items:center}
-.fit__cta p{color:var(--ink-2);font-size:15.5px}
-.fit__cta .btn{justify-self:start}
 
 /* ---------- АВТОР ---------- */
 .author{display:grid;gap:26px;align-items:stretch}
@@ -482,8 +482,6 @@ figure{margin:0}
   .segs{grid-template-columns:repeat(3,1fr);gap:16px}
   .seg{padding:28px 26px}
   .nofit{grid-template-columns:auto 1fr;gap:28px;align-items:center;padding:20px 26px;margin-top:16px}
-  .fit__cta{grid-template-columns:1fr auto;margin-top:24px}
-  .fit__cta .btn{justify-self:end}
   .author{grid-template-columns:.72fr 1.28fr;gap:48px}
   .author__card{flex-direction:row;align-items:flex-start;gap:28px;margin-top:auto;padding:26px 28px}
   .author__who{flex:0 0 34%}
