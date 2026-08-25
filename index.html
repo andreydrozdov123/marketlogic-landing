@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=31">
+<link rel="stylesheet" href="styles.css?v=32">
 </head>
 <body>
 
@@ -46,10 +46,9 @@
     <nav class="hdr__nav" aria-label="Разделы">
       <a href="#practice">Чему научитесь</a>
       <a href="#principles">Подход</a>
-      <a href="#program">Программа</a>
-      <a href="#format">Как проходит</a>
       <a href="#author">Преподаватель</a>
       <a href="#about">Об академии</a>
+      <a href="#program">Программа</a>
       <a href="#faq">Вопросы</a>
     </nav>
 
@@ -63,10 +62,10 @@
   <div class="mmenu" id="mmenu" hidden>
     <a href="#practice">Чему научитесь</a>
     <a href="#principles">Подход</a>
-    <a href="#program">Программа</a>
-    <a href="#format">Как проходит</a>
     <a href="#author">Преподаватель</a>
     <a href="#about">Об академии</a>
+    <a href="#program">Программа</a>
+    <a href="#format">Как проходит</a>
     <a href="#faq">Вопросы</a>
     <a href="#apply" class="btn btn--block">Записаться на курс</a>
   </div>
@@ -301,8 +300,106 @@
   </div>
 </section>
 
+<!-- ═══════ АВТОР ═══════ -->
+<section class="sec sec--gray" id="author">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">Учитесь у практикующих трейдеров</h2>
+    </div>
+
+    <div class="author">
+      <div class="author__media">
+        <picture class="author__pic">
+          <source srcset="img/author.webp" type="image/webp">
+          <img src="img/author.jpg" width="920" height="1151" alt="Преподаватель академии разбирает структуру рынка" loading="lazy" decoding="async">
+        </picture>
+      </div>
+
+      <div class="author__copy">
+        <p>
+          Все наши преподаватели — практикующие трейдеры и аналитики с опытом работы
+          в сфере финансовых рынков, брокерского бизнеса и развития финансовых проектов.
+        </p>
+        <p>
+          Мы увидели одну повторяющуюся проблему: начинающим трейдерам показывают результат,
+          но практически не объясняют сам процесс принятия решения.
+        </p>
+        <p>
+          Поэтому в MarketPro Academy сложные вещи объясняются простым языком, а основной упор
+          сделан на практику, управление риском и понимание рынка.
+        </p>
+
+        <!-- ЧЕРНОВИК: имя и факты заменить на подтверждённые перед запуском -->
+        <div class="author__card">
+          <div class="author__who">
+            <span class="author__role">Преподаватель курса</span>
+            <h3 class="author__name">Тимур Хасанов</h3>
+          </div>
+          <p class="author__bio">
+            Шесть лет на финансовых рынках. Торгует на валютном и фондовом рынке,
+            работал в брокерской компании: сопровождал клиентов и запускал торговые продукты.
+            На курсе ведёт разборы сделок и проверяет домашние задания.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ ОБ АКАДЕМИИ ═══════ -->
+<section class="sec sec--dark" id="about">
+  <div class="wrap about">
+    <div class="about__copy">
+      <span class="about__tag">Об академии</span>
+      <h2 class="h2">MarketPro Academy — школа осознанного трейдинга</h2>
+
+      <p>
+        Обучение построено наоборот привычному: сначала механика рынка и правила, потом сделки.
+        Без «секретных стратегий», без сигналов и без обещаний доходности — только понятная
+        система, которой вы сможете пользоваться сами.
+      </p>
+
+      <!-- Когда появятся реальные цифры (год основания, число выпускников) — их место здесь -->
+      <ul class="about__vals">
+        <li>
+          <b>Объясняем процесс</b>
+          <span>не результат чужих сделок, а логику решения</span>
+        </li>
+        <li>
+          <b>Начинаем с нуля</b>
+          <span>опыт и профильное образование не нужны</span>
+        </li>
+        <li>
+          <b>Учим считать риск</b>
+          <span>капитал важнее одной удачной позиции</span>
+        </li>
+        <li>
+          <b>Не даём сигналов</b>
+          <span>цель — самостоятельность, а не подписка на чужие входы</span>
+        </li>
+      </ul>
+    </div>
+
+    <aside class="about__mission">
+      <span class="about__ic" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M7 24V11l6 6 6-6v13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M19 11l6-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21.5 5.4H25.4V9.3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <p class="about__quote">
+        Мы считаем удачным не того ученика, который заработал на одной сделке,
+        а того, кто может объяснить каждое своё решение на рынке.
+      </p>
+      <span class="about__sign">MarketPro Academy</span>
+    </aside>
+  </div>
+</section>
+
 <!-- ═══════ ПРОГРАММА ═══════ -->
-<section class="sec sec--gray" id="program">
+<section class="sec" id="program">
   <div class="wrap">
     <div class="sec__head">
       <h2 class="h2">Программа обучения</h2>
@@ -491,7 +588,7 @@
 </section>
 
 <!-- ═══════ КАК ПРОХОДИТ ═══════ -->
-<section class="sec" id="format">
+<section class="sec sec--gray" id="format">
   <div class="wrap">
     <div class="sec__head">
       <h2 class="h2">Обучение проходит в собственном темпе</h2>
@@ -520,7 +617,7 @@
 </section>
 
 <!-- ═══════ КОМУ ПОДОЙДЁТ ═══════ -->
-<section class="sec sec--gray" id="fit">
+<section class="sec" id="fit">
   <div class="wrap">
     <div class="sec__head">
       <h2 class="h2">Начать сможет каждый — даже без опыта</h2>
@@ -528,7 +625,7 @@
 
     <ul class="segs">
       <li class="seg">
-        <span class="seg__tag">Новичок</span>
+        <span class="seg__tag">Если только начинаете</span>
         <p class="seg__q">«Я вообще ничего не понимаю в трейдинге»</p>
         <p class="seg__a">
           Курс начинается с нуля: что такое рынок, откуда берётся цена, как работает терминал.
@@ -536,7 +633,7 @@
         </p>
       </li>
       <li class="seg">
-        <span class="seg__tag">Уже пробовал</span>
+        <span class="seg__tag">Если уже пробовали</span>
         <p class="seg__q">«Торговал сам и сливал депозит»</p>
         <p class="seg__a">
           Чаще всего дело не в стратегии, а в отсутствии правил: нет расчёта риска, нет плана,
@@ -544,7 +641,7 @@
         </p>
       </li>
       <li class="seg">
-        <span class="seg__tag">Скептик</span>
+        <span class="seg__tag">Если сомневаетесь</span>
         <p class="seg__q">«Не верю, что этому вообще можно научить»</p>
         <p class="seg__a">
           Мы не обещаем доходность и не даём сигналов. Обещаем понимание процесса: почему цена
@@ -571,104 +668,6 @@
       <p>Начните с бесплатных модулей и консультации — дальше решите сами.</p>
       <a href="#apply" class="btn">Получить доступ</a>
     </div>
-  </div>
-</section>
-
-<!-- ═══════ АВТОР ═══════ -->
-<section class="sec" id="author">
-  <div class="wrap">
-    <div class="sec__head">
-      <h2 class="h2">Учитесь у практикующих трейдеров</h2>
-    </div>
-
-    <div class="author">
-      <div class="author__media">
-        <picture class="author__pic">
-          <source srcset="img/author.webp" type="image/webp">
-          <img src="img/author.jpg" width="920" height="1151" alt="Преподаватель академии разбирает структуру рынка" loading="lazy" decoding="async">
-        </picture>
-      </div>
-
-      <div class="author__copy">
-        <p>
-          Все наши преподаватели — практикующие трейдеры и аналитики с опытом работы
-          в сфере финансовых рынков, брокерского бизнеса и развития финансовых проектов.
-        </p>
-        <p>
-          Мы увидели одну повторяющуюся проблему: начинающим трейдерам показывают результат,
-          но практически не объясняют сам процесс принятия решения.
-        </p>
-        <p>
-          Поэтому в MarketPro Academy сложные вещи объясняются простым языком, а основной упор
-          сделан на практику, управление риском и понимание рынка.
-        </p>
-
-        <!-- ЧЕРНОВИК: имя и факты заменить на подтверждённые перед запуском -->
-        <div class="author__card">
-          <div class="author__who">
-            <span class="author__role">Преподаватель курса</span>
-            <h3 class="author__name">Тимур Хасанов</h3>
-          </div>
-          <p class="author__bio">
-            Шесть лет на финансовых рынках. Торгует на валютном и фондовом рынке,
-            работал в брокерской компании: сопровождал клиентов и запускал торговые продукты.
-            На курсе ведёт разборы сделок и проверяет домашние задания.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ═══════ ОБ АКАДЕМИИ ═══════ -->
-<section class="sec sec--dark" id="about">
-  <div class="wrap about">
-    <div class="about__copy">
-      <span class="about__tag">Об академии</span>
-      <h2 class="h2">MarketPro Academy — школа осознанного трейдинга</h2>
-
-      <p>
-        Обучение построено наоборот привычному: сначала механика рынка и правила, потом сделки.
-        Без «секретных стратегий», без сигналов и без обещаний доходности — только понятная
-        система, которой вы сможете пользоваться сами.
-      </p>
-
-      <!-- Когда появятся реальные цифры (год основания, число выпускников) — их место здесь -->
-      <ul class="about__vals">
-        <li>
-          <b>Объясняем процесс</b>
-          <span>не результат чужих сделок, а логику решения</span>
-        </li>
-        <li>
-          <b>Начинаем с нуля</b>
-          <span>опыт и профильное образование не нужны</span>
-        </li>
-        <li>
-          <b>Учим считать риск</b>
-          <span>капитал важнее одной удачной позиции</span>
-        </li>
-        <li>
-          <b>Не даём сигналов</b>
-          <span>цель — самостоятельность, а не подписка на чужие входы</span>
-        </li>
-      </ul>
-    </div>
-
-    <aside class="about__mission">
-      <span class="about__ic" aria-hidden="true">
-        <svg viewBox="0 0 32 32" fill="none">
-          <path d="M7 24V11l6 6 6-6v13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M19 11l6-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M21.5 5.4H25.4V9.3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </span>
-      <p class="about__quote">
-        Мы считаем удачным не того ученика, который заработал на одной сделке,
-        а того, кто может объяснить каждое своё решение на рынке.
-      </p>
-      <span class="about__sign">MarketPro Academy</span>
-    </aside>
   </div>
 </section>
 
@@ -817,6 +816,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=31"></script>
+<script src="script.js?v=32"></script>
 </body>
 </html>

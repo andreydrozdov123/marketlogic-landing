@@ -291,12 +291,12 @@ figure{margin:0}
 .segs{display:grid;gap:14px}
 .seg{
   display:flex;flex-direction:column;
-  padding:28px 26px;background:#fff;border-radius:var(--r-lg);
+  padding:28px 26px;background:var(--gray);border-radius:var(--r-lg);
 }
 .seg__tag{
   display:inline-block;align-self:flex-start;margin-bottom:16px;padding:6px 12px;border-radius:7px;
-  background:var(--ind-soft);color:var(--ind);
-  font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  background:#fff;color:var(--ind);
+  font-size:12px;font-weight:700;letter-spacing:.01em;
 }
 .seg__q{font-size:19px;font-weight:800;letter-spacing:-.03em;line-height:1.25;margin-bottom:12px}
 .seg__a{color:var(--ink-2);font-size:15px;line-height:1.55}
@@ -314,7 +314,7 @@ figure{margin:0}
 .cross li{position:relative;padding-left:34px;font-size:15px;line-height:1.45;color:var(--ink-2)}
 .cross li::before{
   content:"";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:7px;
-  background:#fff;border:1px solid var(--line);
+  background:var(--gray);border:1px solid var(--line);
 }
 .cross li::after{
   content:"";position:absolute;left:7px;top:11px;width:8px;height:2px;
@@ -323,7 +323,7 @@ figure{margin:0}
 
 .fit__cta{
   display:grid;gap:16px;margin-top:14px;padding:26px 24px;
-  background:#fff;border-radius:var(--r-lg);
+  background:var(--gray);border-radius:var(--r-lg);
 }
 .fit__cta p{color:var(--ink-2);font-size:15.5px}
 .fit__cta .btn{justify-self:start}
@@ -343,7 +343,7 @@ figure{margin:0}
 .author__card{
   display:flex;flex-direction:column;gap:16px;
   margin-top:24px;padding:22px 24px;
-  background:var(--gray);border-radius:var(--r-lg);
+  background:#fff;border-radius:var(--r-lg);
 }
 .author__role{
   display:block;margin-bottom:6px;
