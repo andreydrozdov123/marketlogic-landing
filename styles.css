@@ -253,6 +253,7 @@ figure{margin:0}
 }
 .cv__side{background:var(--gray);padding:20px;display:flex;align-items:flex-start}
 .cv__side .ph{border:0;background:#fff;width:100%}
+.cv__pic{display:block;width:100%}
 .cv__side img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r)}
 .ph--cv{aspect-ratio:1/1}
 

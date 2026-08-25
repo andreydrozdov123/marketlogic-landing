@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=50">
+<link rel="stylesheet" href="styles.css?v=51">
 </head>
 <body>
 
@@ -252,12 +252,10 @@
 
     <div class="cv">
       <aside class="cv__side">
-        <!-- ЗАМЕНИТЬ: <img src="img/cv.jpg" alt="Трейдер за работой"> -->
-        <figure class="ph ph--cv">
-          <span class="ph__ic" aria-hidden="true">👤</span>
-          <b>Фото трейдера</b>
-          <span class="ph__hint">за рабочим местом<br>900 × 900 px</span>
-        </figure>
+        <picture class="cv__pic">
+          <source srcset="img/cv.webp" type="image/webp">
+          <img src="img/cv.jpg" width="900" height="900" alt="Трейдер за рабочим местом анализирует график" loading="lazy" decoding="async">
+        </picture>
       </aside>
 
       <div class="cv__body">
@@ -818,6 +816,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=50"></script>
+<script src="script.js?v=51"></script>
 </body>
 </html>
