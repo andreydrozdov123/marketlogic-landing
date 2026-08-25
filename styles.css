@@ -337,6 +337,10 @@ figure{margin:0}
 /* ---------- АВТОР ---------- */
 .author{display:grid;gap:34px}
 .author__media{position:relative;max-width:440px}
+.author__pic{display:block}
+.author__pic img{width:100%;height:auto;border-radius:var(--r-lg)}
+.claim__pic{display:block}
+.claim__pic img{width:100%;height:auto;border-radius:var(--r-lg);box-shadow:0 26px 54px -26px rgba(0,0,0,.5)}
 .author__chip{
   position:absolute;left:18px;bottom:-18px;max-width:250px;
   display:flex;flex-direction:column;gap:2px;padding:15px 19px;border-radius:14px;

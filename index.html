@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=20">
+<link rel="stylesheet" href="styles.css?v=21">
 </head>
 <body>
 
@@ -202,12 +202,10 @@
       <a href="#program" class="btn btn--white">Смотреть программу</a>
     </div>
 
-    <!-- ЗАМЕНИТЬ: <img src="img/claim.jpg" alt="Разбор сделки"> -->
-    <figure class="ph ph--claim ph--onDark">
-      <span class="ph__ic" aria-hidden="true">🎬</span>
-      <b>Кадр из урока</b>
-      <span class="ph__hint">разбор сделки на экране<br>1000 × 700 px</span>
-    </figure>
+    <picture class="claim__pic">
+      <source srcset="img/lesson.webp" type="image/webp">
+      <img src="img/lesson.jpg" width="1100" height="770" alt="Кадр из урока: разбор сделки по EURUSD с уровнем входа, стопом и целью" loading="lazy" decoding="async">
+    </picture>
   </div>
 </section>
 
@@ -592,12 +590,10 @@
 <section class="sec" id="author">
   <div class="wrap author">
     <div class="author__media">
-      <!-- ЗАМЕНИТЬ: <img src="img/author.jpg" alt="Автор курса"> -->
-      <figure class="ph ph--author">
-        <span class="ph__ic" aria-hidden="true">👤</span>
-        <b>Портрет автора</b>
-        <span class="ph__hint">вертикальное фото<br>1000 × 1250 px</span>
-      </figure>
+      <picture class="author__pic">
+        <source srcset="img/author.webp" type="image/webp">
+        <img src="img/author.jpg" width="920" height="1151" alt="Преподаватель академии у доски разбирает структуру рынка" loading="lazy" decoding="async">
+      </picture>
       <div class="author__chip"><b>6 лет</b><span>в финансовых рынках и брокерском бизнесе</span></div>
     </div>
 
@@ -821,6 +817,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=20"></script>
+<script src="script.js?v=21"></script>
 </body>
 </html>
