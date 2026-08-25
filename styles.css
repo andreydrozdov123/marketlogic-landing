@@ -466,6 +466,7 @@ figure{margin:0}
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M16 2.2L27.2 6.3v9.3c0 7-4.8 12-11.2 14.2C9.6 27.6 4.8 22.6 4.8 15.6V6.3L16 2.2z' stroke='%23fff' stroke-width='0.7'/%3E%3C/svg%3E") center/contain no-repeat;
 }
 .apply__in{position:relative;z-index:2;display:grid;gap:30px;align-items:center}
+.apply .h2{font-size:clamp(23px,4.4vw,36px)}
 .apply__copy p{margin-top:18px;color:rgba(255,255,255,.72);font-size:17px}
 .apply__pts{display:grid;gap:11px;margin-top:24px}
 .apply__pts li{position:relative;padding-left:28px;color:rgba(255,255,255,.8);font-size:15px}
