@@ -73,6 +73,7 @@ figure{margin:0}
 .ph__ic{font-size:30px;line-height:1;margin-bottom:4px;opacity:.65}
 .ph b{font-size:14px;font-weight:700;color:var(--ink-2);letter-spacing:0}
 .ph__hint{font-size:12px;line-height:1.45}
+.sec--gray .ph{background:#fff;border-color:var(--line)}
 .ph--onDark{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.28);color:rgba(255,255,255,.72)}
 .ph--onDark b{color:#fff}
 .ph--hero{aspect-ratio:6/7}
@@ -278,14 +279,14 @@ figure{margin:0}
 .prog__cta .btn{justify-self:start}
 
 /* ---------- ФОРМАТ ---------- */
-.fmt{display:grid;gap:26px}
-.fmt__list{display:grid;gap:12px}
-.fmt__list li{display:flex;gap:16px;padding:24px 22px;background:var(--gray);border-radius:var(--r-lg)}
-.fmt__n{flex:0 0 auto;font-size:15px;font-weight:800;letter-spacing:.08em;color:var(--ind)}
-.fmt h3{font-size:18px;margin-bottom:8px}
-.fmt p{color:var(--ink-2);font-size:14.5px}
+.fmt{display:grid;gap:22px}
+.fmt__list{display:grid;gap:9px}
+.fmt__list li{display:flex;gap:14px;padding:17px 19px;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
+.fmt__n{flex:0 0 auto;font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--ind);padding-top:2px}
+.fmt h3{font-size:16.5px;margin-bottom:5px}
+.fmt p{color:var(--ink-2);font-size:14px;line-height:1.45}
 .fmt__media{display:grid;gap:14px}
-.ph--fill{min-height:280px;height:100%}
+.ph--fill{min-height:240px;height:100%}
 
 /* ---------- КОМУ ПОДОЙДЁТ ---------- */
 .segs{display:grid;gap:14px}
@@ -488,7 +489,7 @@ figure{margin:0}
   .ph--cv{aspect-ratio:auto;min-height:100%}
   .claim{padding:90px 0}
   .claim__in{grid-template-columns:1.05fr .95fr;gap:56px}
-  .fmt{grid-template-columns:1.05fr .95fr;gap:44px;align-items:start}
+  .fmt{grid-template-columns:1fr .82fr;gap:36px;align-items:stretch}
   .fmt__media{grid-template-columns:1fr;gap:16px;height:100%}
   .segs{grid-template-columns:repeat(3,1fr);gap:16px}
   .seg{padding:34px 30px}
