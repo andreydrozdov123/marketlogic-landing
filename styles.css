@@ -254,13 +254,13 @@ figure{margin:0}
 .cv__side{background:var(--gray);padding:20px;display:flex}
 .cv__side .ph{border:0;background:#fff;width:100%}
 .cv__pic{
-  display:block;width:100%;aspect-ratio:1/1;
+  display:block;width:100%;aspect-ratio:2/3;
   overflow:hidden;border-radius:var(--r);background:#fff;
 }
 .cv__pic{align-self:stretch}
 .cv__pic img{
   display:block;width:100%;height:100%;
-  object-fit:cover;object-position:60% 50%;aspect-ratio:auto;border-radius:0;
+  object-fit:cover;object-position:58% 58%;aspect-ratio:auto;border-radius:0;
 }
 .ph--cv{aspect-ratio:1/1}
 
