@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=48">
+<link rel="stylesheet" href="styles.css?v=49">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
   <div class="wrap hdr__in">
     <a href="#top" class="logo" aria-label="MarketPro Academy">
       <span class="logo__mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
           <path d="M16 2.2L27.2 6.3v9.3c0 7-4.8 12-11.2 14.2C9.6 27.6 4.8 22.6 4.8 15.6V6.3L16 2.2z" fill="currentColor"/>
           <g fill="#fff">
             <rect x="9.9" y="17.6" width="2.6" height="4.3" rx="1"/>
@@ -47,6 +47,389 @@
         <b>Market<em>Pro</em> <span>Academy</span></b>
         <i>Школа осознанного трейдинга</i>
       </span>
+    </a>
+
+    <nav class="hdr__nav" aria-label="Разделы">
+      <a href="#practice">Чему научитесь</a>
+      <a href="#principles">Подход</a>
+      <a href="#author">Преподаватель</a>
+      <a href="#about">Об академии</a>
+      <a href="#program">Программа</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+
+    <a href="#apply" class="btn btn--sm hdr__cta">Записаться</a>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="mmenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mmenu" id="mmenu" hidden>
+    <a href="#practice">Чему научитесь</a>
+    <a href="#principles">Подход</a>
+    <a href="#author">Преподаватель</a>
+    <a href="#about">Об академии</a>
+    <a href="#program">Программа</a>
+    <a href="#format">Как проходит</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#apply" class="btn btn--block">Записаться на курс</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ═══════ ПЕРВЫЙ ЭКРАН ═══════ -->
+<section class="hero">
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <span class="pill">Онлайн-курс трейдинга для начинающих</span>
+
+      <h1 class="hero__h1">
+        Научитесь понимать&nbsp;рынок,<br>
+        а не <span class="u-mark">угадывать</span> его
+      </h1>
+
+      <p class="hero__lead">
+        От первых терминов и устройства финансовых рынков — до самостоятельного
+        анализа графика и осознанных сделок.
+      </p>
+
+      <div class="hero__btns">
+        <a href="#apply" class="btn btn--lg">Записаться на курс</a>
+        <a href="#program" class="btn btn--lg btn--line">Смотреть программу</a>
+      </div>
+
+      <p class="hero__note">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.4l4 4 8-8.8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Подходит даже тем, кто никогда раньше не торговал
+      </p>
+    </div>
+
+    <picture class="hero__pic">
+      <source srcset="img/hero.webp" type="image/webp">
+      <img src="img/hero.jpg" width="1161" height="1355" alt="Трейдер за рабочим местом анализирует графики на нескольких мониторах" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+
+</section>
+
+<!-- ═══════ НА ПРАКТИКЕ РАЗБЕРЁТЕСЬ ═══════ -->
+<section class="sec" id="practice">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">На практике разберётесь, как это работает</h2>
+      <p class="sec__lead">Три навыка, из которых собирается любая осознанная сделка.</p>
+    </div>
+
+    <div class="cards3">
+      <article class="card3">
+        <picture>
+          <source srcset="img/chart.webp" type="image/webp">
+          <img src="img/chart.jpg" width="900" height="675" alt="Разбор структуры рынка и ключевых уровней на графике EURUSD" loading="lazy" decoding="async">
+        </picture>
+        <div class="card3__txt">
+          <span class="card3__n">01</span>
+          <h3>Читать график</h3>
+          <p>Тренды, уровни, структура рынка, импульсы и коррекции — вместо хаотичных свечей понятная картина.</p>
+        </div>
+      </article>
+
+      <article class="card3">
+        <picture>
+          <source srcset="img/risk.webp" type="image/webp">
+          <img src="img/risk.jpg" width="900" height="675" alt="Расчёт риска на сделку и объёма позиции в блокноте рядом с графиком EURUSD" loading="lazy" decoding="async">
+        </picture>
+        <div class="card3__txt">
+          <span class="card3__n">02</span>
+          <h3>Считать риск</h3>
+          <p>Сколько допустимо потерять в одной сделке и какой объём позиции этому соответствует.</p>
+        </div>
+      </article>
+
+      <article class="card3">
+        <picture>
+          <source srcset="img/deal.webp" type="image/webp">
+          <img src="img/deal.jpg" width="900" height="675" alt="Окно ордера в торговом терминале: объём позиции, Stop Loss и Take Profit" loading="lazy" decoding="async">
+        </picture>
+        <div class="card3__txt">
+          <span class="card3__n">03</span>
+          <h3>Совершать сделки</h3>
+          <p>Ордера, объём, Stop Loss и Take Profit — уверенная работа с терминалом без лишних кликов.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ БОЛЬ ═══════ -->
+<section class="sec sec--gray" id="pain">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">Почему большинство новичков теряют деньги</h2>
+      <p class="sec__lead">
+        Не потому что трейдинг невозможно освоить. Обычно причина проще — и она повторяется почти у всех.
+      </p>
+    </div>
+
+    <ul class="pains">
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h3.5l9 10H21"/><path d="M4 17h3.5l9-10H21"/><path d="M18 4l3 3-3 3"/><path d="M18 14l3 3-3 3"/></svg></span><h3>Торговля без системы</h3><p>Каждая сделка по новым правилам. Результат нельзя ни повторить, ни разобрать.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13H11l-1 9 8.5-11H12l1-9z"/></svg></span><h3>Сделки на эмоциях</h3><p>Вход по азарту, выход по страху. Решение принимает состояние, а не расчёт.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v6c0 4.5-3 7.8-7.5 9-4.5-1.2-7.5-4.5-7.5-9V6L12 3z"/><path d="M12 8.5v4"/><path d="M12 16h.01"/></svg></span><h3>Непонимание риска</h3><p>Одна неудачная сделка забирает то, что копилось неделями.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></span><h3>Чужие сигналы</h3><p>Копируете входы, но не понимаете логику — и не можете её повторить.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H11v16H5.5A2.5 2.5 0 0 0 3 21.5V5.5z"/><path d="M21 5.5A2.5 2.5 0 0 0 18.5 3H13v16h5.5a2.5 2.5 0 0 1 2.5 2.5V5.5z"/></svg></span><h3>Нет базовых знаний</h3><p>Пробелы в основе ломают всё, что строится сверху.</p></li>
+      <li><span class="miss__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9.5V13l2.5 2"/><path d="M9 2h6"/><path d="M19.5 5.5l1.5 1.5"/></svg></span><h3>Спешка заработать</h3><p>Попытка получить результат за неделю почти всегда стоит депозита.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════ ИНДИГО-БЛОК ═══════ -->
+<section class="claim">
+  <div class="wrap claim__in">
+    <div>
+      <h2 class="h2">Наша задача — не дать вам «сигнал»</h2>
+      <p>
+        Задача — научить принимать торговое решение самостоятельно. Сначала вы понимаете,
+        что происходит на рынке и почему, и только потом открываете сделку.
+      </p>
+      <a href="#program" class="btn btn--white">Смотреть программу</a>
+    </div>
+
+    <picture class="claim__pic">
+      <source srcset="img/lesson.webp" type="image/webp">
+      <img src="img/lesson.jpg" width="1100" height="770" alt="Кадр из урока: разбор сделки по EURUSD с уровнем входа, стопом и целью" loading="lazy" decoding="async">
+    </picture>
+  </div>
+</section>
+
+<!-- ═══════ ПРИНЦИПЫ ═══════ -->
+<section class="sec" id="principles">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">Трейдинг по правилам — ваша защита от случайных потерь</h2>
+      <p class="sec__lead">
+        Мы учим не «угадывать движение», а работать по системе, где у каждого решения
+        есть основание, а у каждой сделки — заранее просчитанный риск.
+      </p>
+    </div>
+
+    <ul class="prin">
+      <li>
+        <span class="prin__n">01</span>
+        <h3>Сначала стратегия, потом сделки</h3>
+        <p>
+          Пока нет правил входа, выхода и сопровождения позиции — это не торговля, а серия догадок.
+          Систему собираем до того, как открыть первую сделку.
+        </p>
+      </li>
+      <li>
+        <span class="prin__n">02</span>
+        <h3>Сначала без риска, потом на своём счёте</h3>
+        <p>
+          Навык отрабатывается на разборах и учебном счёте. К реальным деньгам вы переходите
+          с готовым планом, а не с надеждой, что повезёт.
+        </p>
+      </li>
+      <li>
+        <span class="prin__n">03</span>
+        <h3>Капитал важнее одной сделки</h3>
+        <p>
+          Риск-менеджмент — не приложение к стратегии, а её основа. Задача — остаться в игре,
+          а не заработать всё за неделю.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════ НАВЫКИ ═══════ -->
+<section class="sec" id="result">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">Освоите все базовые навыки трейдера</h2>
+      <p class="sec__lead">Так будет выглядеть ваш набор умений после курса.</p>
+    </div>
+
+    <div class="cv">
+      <aside class="cv__side">
+        <!-- ЗАМЕНИТЬ: <img src="img/cv.jpg" alt="Трейдер за работой"> -->
+        <figure class="ph ph--cv">
+          <span class="ph__ic" aria-hidden="true">👤</span>
+          <b>Фото трейдера</b>
+          <span class="ph__hint">за рабочим местом<br>900 × 900 px</span>
+        </figure>
+      </aside>
+
+      <div class="cv__body">
+        <div class="cv__row">
+          <span class="cv__lbl">Кем станете</span>
+          <div class="cv__val">
+            <span class="cv__post">Трейдер</span>
+            <span class="cv__sub">торгует по собственной системе, а не по чужим сигналам</span>
+          </div>
+        </div>
+
+        <div class="cv__row">
+          <span class="cv__lbl">Навыки</span>
+          <ul class="cv__skills">
+            <li>Понимать устройство финансовых рынков</li>
+            <li>Читать график и видеть структуру рынка</li>
+            <li>Находить точки входа и выхода</li>
+            <li>Применять технический анализ</li>
+            <li>Рассчитывать риск на сделку</li>
+            <li>Определять размер позиции</li>
+            <li>Работать со Stop Loss и Take Profit</li>
+            <li>Составлять собственный торговый план</li>
+            <li>Контролировать эмоции в торговле</li>
+          </ul>
+        </div>
+
+        <div class="cv__row cv__row--last">
+          <span class="cv__lbl">Инструменты</span>
+          <ul class="cv__tools">
+            <li>Forex</li>
+            <li>Акции</li>
+            <li>Индексы</li>
+            <li>Сырьё</li>
+            <li>Торговый терминал</li>
+            <li>Ордера</li>
+            <li>Объём позиции</li>
+            <li>Stop Loss</li>
+            <li>Take Profit</li>
+            <li>Уровни</li>
+            <li>Риск-менеджмент</li>
+            <li>Торговый план</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ АВТОР ═══════ -->
+<section class="sec sec--gray" id="author">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">Учитесь у практикующих трейдеров</h2>
+    </div>
+
+    <div class="author">
+      <div class="author__media">
+        <picture class="author__pic">
+          <source srcset="img/author.webp" type="image/webp">
+          <img src="img/author.jpg" width="1000" height="1250" alt="Преподаватель академии разбирает структуру рынка" loading="lazy" decoding="async">
+        </picture>
+      </div>
+
+      <div class="author__copy">
+        <p>
+          Все наши преподаватели — практикующие трейдеры и аналитики с опытом работы
+          в сфере финансовых рынков, брокерского бизнеса и развития финансовых проектов.
+        </p>
+        <p>
+          Мы увидели одну повторяющуюся проблему: начинающим трейдерам показывают результат,
+          но практически не объясняют сам процесс принятия решения.
+        </p>
+        <p>
+          Поэтому в MarketPro Academy сложные вещи объясняются простым языком, а основной упор
+          сделан на практику, управление риском и понимание рынка.
+        </p>
+
+        <!-- ЧЕРНОВИК: имя и факты заменить на подтверждённые перед запуском -->
+        <div class="author__card">
+          <div class="author__who">
+            <span class="author__role">Преподаватель курса</span>
+            <h3 class="author__name">Тимур Хасанов</h3>
+          </div>
+          <p class="author__bio">
+            Шесть лет на финансовых рынках. Торгует на валютном и фондовом рынке,
+            работал в брокерской компании: сопровождал клиентов и запускал торговые продукты.
+            На курсе ведёт разборы сделок и проверяет домашние задания.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ ОБ АКАДЕМИИ ═══════ -->
+<section class="sec sec--dark" id="about">
+  <div class="wrap about">
+    <div class="about__copy">
+      <span class="about__tag">Об академии</span>
+      <h2 class="h2">MarketPro Academy — школа осознанного трейдинга</h2>
+
+      <p>
+        Обучение построено наоборот привычному: сначала механика рынка и правила, потом сделки.
+        Без «секретных стратегий», без сигналов и без обещаний доходности — только понятная
+        система, которой вы сможете пользоваться сами.
+      </p>
+
+      <!-- Когда появятся реальные цифры (год основания, число выпускников) — их место здесь -->
+      <ul class="about__vals">
+        <li>
+          <b>Объясняем процесс</b>
+          <span>не результат чужих сделок, а логику решения</span>
+        </li>
+        <li>
+          <b>Начинаем с нуля</b>
+          <span>опыт и профильное образование не нужны</span>
+        </li>
+        <li>
+          <b>Учим считать риск</b>
+          <span>капитал важнее одной удачной позиции</span>
+        </li>
+        <li>
+          <b>Не даём сигналов</b>
+          <span>цель — самостоятельность, а не подписка на чужие входы</span>
+        </li>
+      </ul>
+    </div>
+
+    <aside class="about__mission">
+      <span class="about__ic" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M16 2.2L27.2 6.3v9.3c0 7-4.8 12-11.2 14.2C9.6 27.6 4.8 22.6 4.8 15.6V6.3L16 2.2z" fill="currentColor"/>
+          <g fill="#fff">
+            <rect x="9.9" y="17.6" width="2.6" height="4.3" rx="1"/>
+            <rect x="10.8" y="16.1" width="0.8" height="7.3" rx="0.4"/>
+            <rect x="14.7" y="13.6" width="2.6" height="6.4" rx="1"/>
+            <rect x="15.6" y="12.1" width="0.8" height="9.4" rx="0.4"/>
+            <rect x="19.5" y="10.8" width="2.6" height="6.2" rx="1"/>
+            <rect x="20.4" y="9.4" width="0.8" height="9.1" rx="0.4"/>
+          </g>
+        </svg>
+      </span>
+      <p class="about__quote">
+        Мы считаем удачным не того ученика, который заработал на одной сделке,
+        а того, кто может объяснить каждое своё решение на рынке.
+      </p>
+      <span class="about__sign">MarketPro Academy</span>
+    </aside>
+  </div>
+</section>
+
+<!-- ═══════ ПРОГРАММА ═══════ -->
+<section class="sec" id="program">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="h2">Программа обучения</h2>
+      <p class="sec__lead">
+        8 модулей: сначала база и терминал, затем анализ, риск и психология,
+        и только в конце — сборка стратегии и практика.
+        <b class="lead-free"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 11V7a5 5 0 0 1 9.9-1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><rect x="4" y="11" width="16" height="10" rx="2.5" stroke="currentColor" stroke-width="2.2"/></svg>Первые два модуля — бесплатно</b>
+      </p>
+    </div>
+
+    <ol class="prog">
+      <li class="mod mod--free">
+        <button class="mod__h" aria-expanded="false">
+          <span class="mod__n">01</span>
+          <span class="mod__c">
+            <span class="mod__t">Как устроен рынок и откуда берётся цена</span>
+            <span class="mod__topic">Основы рынка</span>
+          </span>
           <span class="mod__free"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 11V7a5 5 0 0 1 9.9-1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><rect x="4" y="11" width="16" height="10" rx="2.5" stroke="currentColor" stroke-width="2.2"/></svg>Бесплатно</span>
           <span class="mod__x" aria-hidden="true"></span>
         </button>
@@ -393,7 +776,7 @@
     <div class="ftr__top">
       <a href="#top" class="logo">
         <span class="logo__mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
           <path d="M16 2.2L27.2 6.3v9.3c0 7-4.8 12-11.2 14.2C9.6 27.6 4.8 22.6 4.8 15.6V6.3L16 2.2z" fill="currentColor"/>
           <g fill="#fff">
             <rect x="9.9" y="17.6" width="2.6" height="4.3" rx="1"/>
@@ -435,6 +818,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=48"></script>
+<script src="script.js?v=49"></script>
 </body>
 </html>
