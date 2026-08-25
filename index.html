@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.min.css">
-<link rel="stylesheet" href="styles.css?v=58">
+<link rel="stylesheet" href="styles.css?v=59">
 </head>
 <body>
 
@@ -614,12 +614,10 @@
       </ul>
 
       <div class="fmt__media">
-        <!-- ЗАМЕНИТЬ: <img src="img/format-1.jpg" alt="Интерфейс курса"> -->
-        <figure class="ph ph--fill">
-          <span class="ph__ic" aria-hidden="true">💻</span>
-          <b>Скрин платформы</b>
-          <span class="ph__hint">список уроков / личный кабинет<br>1024 × 1024 px</span>
-        </figure>
+        <picture>
+          <source srcset="img/platform-shot.webp" type="image/webp">
+          <img src="img/platform-shot.jpg" width="1000" height="1000" alt="Платформа курса: список из восьми модулей и окно видеоурока с разбором сделки" loading="lazy" decoding="async">
+        </picture>
       </div>
     </div>
   </div>
@@ -815,6 +813,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/js/intlTelInput.min.js"></script>
-<script src="script.js?v=58"></script>
+<script src="script.js?v=59"></script>
 </body>
 </html>
