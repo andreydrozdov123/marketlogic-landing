@@ -315,8 +315,6 @@ figure{margin:0}
 .mod__x::before,.mod__x::after{content:"";position:absolute;left:50%;top:50%;background:var(--ink);border-radius:2px;transition:opacity .2s ease,background .2s ease}
 .mod__x::before{width:10px;height:2px;transform:translate(-50%,-50%)}
 .mod__x::after{width:2px;height:10px;transform:translate(-50%,-50%)}
-.mod.is-open .mod__x{background:var(--ind);transform:rotate(90deg)}
-.mod.is-open .mod__x::before{background:#fff}
 .mod.is-open .mod__x::after{opacity:0}
 .mod.is-open .mod__t{color:var(--ind)}
 
