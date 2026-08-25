@@ -135,8 +135,8 @@ figure{margin:0}
 .mmenu a:last-child{border:0;margin-top:16px;color:#fff}
 
 /* ---------- ПЕРВЫЙ ЭКРАН ---------- */
-.hero{padding:34px 0 58px}
-.hero__in{display:grid;gap:32px;align-items:center}
+.hero{padding:28px 0 46px}
+.hero__in{display:grid;gap:26px;align-items:center}
 
 .pill{
   display:inline-block;margin-bottom:20px;padding:8px 15px;border-radius:8px;
@@ -156,13 +156,13 @@ figure{margin:0}
 .hero__pic img{width:100%;height:auto;border-radius:var(--r-lg)}
 
 /* ---------- СЕКЦИИ ---------- */
-.sec{padding:58px 0}
+.sec{padding:46px 0}
 .sec--gray{background:var(--gray)}
-.sec__head{max-width:820px;margin-bottom:32px}
+.sec__head{max-width:820px;margin-bottom:26px}
 .sec__lead{margin-top:16px;color:var(--ink-2);font-size:clamp(15.5px,3.6vw,18px)}
 
 /* ---------- 3 КАРТОЧКИ С ФОТО ---------- */
-.cards3{display:grid;gap:16px}
+.cards3{display:grid;gap:12px}
 .card3{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
 .card3 .ph{border-radius:0;border:0;width:100%}
 .card3 picture{
@@ -170,14 +170,14 @@ figure{margin:0}
   background:#fff;border-bottom:1px solid var(--line);
 }
 .card3 picture img{display:block;width:100%;height:100%;object-fit:contain;aspect-ratio:auto}
-.card3__txt{padding:22px}
+.card3__txt{padding:20px}
 .card3__n{display:block;margin-bottom:10px;font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--ind)}
 .card3 h3{font-size:21px;margin-bottom:9px}
 .card3 p{color:var(--ink-2);font-size:15px}
 
 /* ---------- БОЛЬ ---------- */
 .pains{display:grid;gap:14px}
-.pains li{padding:26px 24px;background:#fff;border-radius:var(--r-lg)}
+.pains li{padding:22px 20px;background:#fff;border-radius:var(--r-lg)}
 .miss__ic{
   display:grid;place-items:center;width:46px;height:46px;margin-bottom:16px;
   border-radius:13px;background:rgba(229,52,47,.09);color:var(--red);
@@ -188,7 +188,7 @@ figure{margin:0}
 
 /* ---------- АКЦЕНТНЫЙ БЛОК ---------- */
 .claim{
-  position:relative;overflow:hidden;padding:56px 0;color:#fff;
+  position:relative;overflow:hidden;padding:46px 0;color:#fff;
   background:
     radial-gradient(1200px 520px at 88% 8%, rgba(10,133,88,.55), transparent 62%),
     linear-gradient(135deg,#04241A 0%,#073827 48%,#0A5A3C 100%);
@@ -214,7 +214,7 @@ figure{margin:0}
 /* ---------- ПРИНЦИПЫ ---------- */
 .prin{display:grid;gap:14px;counter-reset:prin}
 .prin li{
-  position:relative;padding:28px 26px;
+  position:relative;padding:24px 22px;
   border:1px solid var(--line);border-radius:var(--r-lg);
   transition:border-color .2s ease;
 }
@@ -251,20 +251,20 @@ figure{margin:0}
   display:grid;gap:0;overflow:hidden;
   background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);
 }
-.cv__side{background:var(--gray);padding:20px;display:flex}
+.cv__side{background:var(--gray);padding:14px;display:flex}
 .cv__side .ph{border:0;background:#fff;width:100%}
 .cv__pic{
-  display:block;width:100%;aspect-ratio:2/3;
+  display:block;width:100%;aspect-ratio:4/3;
   overflow:hidden;border-radius:var(--r);background:#fff;
 }
 .cv__pic{align-self:stretch}
 .cv__pic img{
   display:block;width:100%;height:100%;
-  object-fit:cover;object-position:58% 58%;aspect-ratio:auto;border-radius:0;
+  object-fit:cover;object-position:58% 62%;aspect-ratio:auto;border-radius:0;
 }
 .ph--cv{aspect-ratio:1/1}
 
-.cv__body{padding:6px 22px 24px}
+.cv__body{padding:6px 20px 22px}
 .cv__row{padding:20px 0;border-bottom:1px solid var(--line)}
 .cv__row--last{border-bottom:0;padding-bottom:6px}
 .cv__lbl{
@@ -346,7 +346,7 @@ figure{margin:0}
 
 /* ---------- КОМУ ПОДОЙДЁТ ---------- */
 .segs{display:grid;gap:12px}
-.seg{padding:22px 22px;background:var(--gray);border-radius:var(--r-lg)}
+.seg{padding:20px;background:var(--gray);border-radius:var(--r-lg)}
 .seg__tag{
   display:inline-block;margin-bottom:12px;padding:5px 11px;border-radius:7px;
   background:#fff;color:var(--ind);font-size:12px;font-weight:700;
@@ -400,7 +400,7 @@ figure{margin:0}
 
 /* ---------- ОБ АКАДЕМИИ ---------- */
 .sec--dark{background:var(--ink);color:#fff}
-.about{display:grid;gap:28px}
+.about{display:grid;gap:24px}
 .about__tag{
   display:inline-block;margin-bottom:16px;padding:7px 14px;border-radius:8px;
   background:rgba(255,255,255,.12);
@@ -445,7 +445,7 @@ figure{margin:0}
 
 /* ---------- ЗАЯВКА ---------- */
 .apply{
-  position:relative;overflow:hidden;padding:58px 0;color:#fff;
+  position:relative;overflow:hidden;padding:46px 0;color:#fff;
   background:
     radial-gradient(760px 420px at 8% 0%, rgba(10,133,88,.34), transparent 62%),
     radial-gradient(620px 460px at 100% 100%, rgba(10,133,88,.20), transparent 66%),
@@ -477,7 +477,7 @@ figure{margin:0}
 .apply__pts li{position:relative;padding-left:28px;color:rgba(255,255,255,.8);font-size:15px}
 .apply__pts li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--ind)}
 
-.form{padding:26px 22px;border-radius:var(--r-lg);background:#fff;color:var(--ink)}
+.form{padding:22px 20px;border-radius:var(--r-lg);background:#fff;color:var(--ink)}
 .form__t{font-size:22px;letter-spacing:-.03em;margin-bottom:8px}
 .form__sub{color:var(--ink-2);font-size:14.5px;margin-bottom:22px}
 
@@ -556,6 +556,7 @@ figure{margin:0}
   .cv{grid-template-columns:.44fr 1fr}
   .cv__pic{aspect-ratio:auto;flex:1}
   .cv__side{padding:22px}
+  .cv__pic{aspect-ratio:auto}
   .cv__body{padding:10px 34px 30px}
   .cv__row{padding:24px 0}
   .ph--cv{aspect-ratio:1/1}
