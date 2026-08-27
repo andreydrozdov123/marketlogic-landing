@@ -96,6 +96,33 @@
   }
 
 
+  /* ── лёгкий параллакс картинки первого экрана ── */
+  (function () {
+    var pic = document.querySelector('.hero__pic');
+    if (!pic) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var ticking = false;
+    var limit = 900;
+
+    var apply = function () {
+      ticking = false;
+      var y = window.scrollY || window.pageYOffset;
+      if (y > limit) return;
+      var k = window.innerWidth < 900 ? 0.05 : 0.1;
+      pic.style.transform = 'translate3d(0,' + (y * k).toFixed(1) + 'px,0)';
+    };
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(apply);
+      }
+    }, { passive: true });
+
+    apply();
+  })();
+
   /* ── UTM / атрибуция ── */
   (function () {
     var TRACK_KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid','yclid'];
