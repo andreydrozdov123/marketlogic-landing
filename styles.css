@@ -95,10 +95,26 @@ figure{margin:0}
 
 /* ---------- ШАПКА ---------- */
 .hdr{
-  position:sticky;top:0;z-index:60;
-  background:var(--ind);color:#fff;
+  position:sticky;top:0;z-index:60;overflow:hidden;color:#fff;
   transition:box-shadow .2s ease;
+  background:
+    radial-gradient(680px 220px at 82% -30%, rgba(20,190,124,.55), transparent 65%),
+    linear-gradient(100deg,#04241A 0%,#073827 42%,#0A6A45 100%);
 }
+.hdr::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:44px 44px;
+  -webkit-mask-image:linear-gradient(100deg,#000 6%,transparent 58%);
+  mask-image:linear-gradient(100deg,#000 6%,transparent 58%);
+}
+.hdr::after{
+  content:"";position:absolute;right:9%;top:-58px;width:150px;height:150px;
+  border:1.5px solid rgba(255,255,255,.1);border-radius:50%;pointer-events:none;
+}
+.hdr__in,.mmenu{position:relative;z-index:2}
 .hdr.is-stuck{box-shadow:0 8px 22px -16px rgba(0,0,0,.6)}
 .hdr__in{display:flex;align-items:center;gap:22px;height:64px}
 
@@ -129,7 +145,7 @@ figure{margin:0}
 .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
 .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
 
-.mmenu{display:flex;flex-direction:column;padding:6px 20px 22px;background:var(--ind);border-top:1px solid rgba(255,255,255,.18)}
+.mmenu{display:flex;flex-direction:column;padding:6px 20px 22px;background:rgba(4,36,26,.96);border-top:1px solid rgba(255,255,255,.18)}
 .mmenu[hidden]{display:none}
 .mmenu a{padding:15px 0;font-weight:600;color:rgba(255,255,255,.85);border-bottom:1px solid rgba(255,255,255,.14)}
 .mmenu a:last-child{border:0;margin-top:16px;background:#fff;border-color:#fff;color:var(--ind)}
