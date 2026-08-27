@@ -561,6 +561,7 @@ figure{margin:0}
 .disc{margin:22px 0;padding:20px;border-radius:var(--r);background:var(--gray);font-size:12.5px;line-height:1.6;color:var(--ink-2)}
 .disc b{color:var(--ink)}
 .ftr__btm{display:flex;flex-direction:column;gap:8px;font-size:12.5px;color:var(--ink-3)}
+.ftr__btm a:hover{color:var(--ind)}
 
 /* ---------- ПОЯВЛЕНИЕ ---------- */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
