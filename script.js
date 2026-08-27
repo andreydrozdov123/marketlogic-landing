@@ -96,6 +96,37 @@
   }
 
 
+  /* ── модальное окно с политикой ── */
+  (function () {
+    var modal = document.getElementById('privacyModal');
+    if (!modal) return;
+    var opener = null;
+
+    var open = function (e) {
+      if (e) { e.preventDefault(); opener = e.currentTarget; }
+      modal.hidden = false;
+      document.body.classList.add('pp-open');
+      var x = modal.querySelector('.pp__x');
+      if (x) x.focus();
+    };
+
+    var close = function () {
+      modal.hidden = true;
+      document.body.classList.remove('pp-open');
+      if (opener && opener.focus) opener.focus();
+    };
+
+    Array.prototype.forEach.call(document.querySelectorAll('[data-pp-open]'), function (a) {
+      a.addEventListener('click', open);
+    });
+    Array.prototype.forEach.call(modal.querySelectorAll('[data-pp-close]'), function (b) {
+      b.addEventListener('click', close);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !modal.hidden) close();
+    });
+  })();
+
   /* ── лёгкий параллакс картинки первого экрана ── */
   (function () {
     var pic = document.querySelector('.hero__pic');
