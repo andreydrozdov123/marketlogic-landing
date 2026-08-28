@@ -647,7 +647,6 @@ figure{margin:0}
 .pp__body li{position:relative;padding-left:20px;color:var(--ink-2);font-size:14.5px;line-height:1.5}
 .pp__body li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:2px;background:var(--ind)}
 .pp__body a{color:var(--ind);text-decoration:underline;text-underline-offset:2px}
-.pp__date{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)}
 .pp__body--page{padding:0}
 
 .pp__foot{flex:0 0 auto;padding:16px 22px;border-top:1px solid var(--line);text-align:right;background:#fff}
