@@ -207,10 +207,10 @@
       geoIpLookup: function (success) {
         fetch('https://api.country.is/')
           .then(function (r) { return r.json(); })
-          .then(function (d) { success(d.country || 'RU'); })
-          .catch(function () { success('RU'); });
+          .then(function (d) { success(d.country || 'KZ'); })
+          .catch(function () { success('KZ'); });
       },
-      preferredCountries: ['ru','kz','uz','by','kg','am','az','ge','ua','md'],
+      preferredCountries: ['kz','ru','uz','kg','by','az','am','ge','ua','md'],
       separateDialCode: true,
       autoPlaceholder: 'aggressive',
       customPlaceholder: function (p) { return p.replace(/^([08])[\s.]+/, ''); },

@@ -545,10 +545,44 @@ figure{margin:0}
 .form-consent a{color:var(--ind);text-decoration:underline;text-underline-offset:2px}
 .form-submit:disabled{opacity:.65;cursor:default}
 
-/* intl-tel-input */
-.iti{width:100%}
-.iti--separate-dial-code .iti__selected-flag{background:transparent;border-radius:11px 0 0 11px}
-.form-row .iti input{padding-left:14px}
+/* intl-tel-input — код страны и номер одним полем */
+.form-row .iti{
+  display:flex!important;align-items:stretch;width:100%;position:relative;
+  border:1.5px solid var(--line);border-radius:11px;background:#fff;
+  transition:border-color .16s ease;
+}
+.form-row .iti:focus-within{border-color:var(--ind)}
+.form-row.error .iti{border-color:var(--red)}
+.form-row .iti .iti__flag-container{
+  position:relative!important;display:flex;align-items:center;flex-shrink:0;
+  background:rgba(0,0,0,.035);border-right:1px solid var(--line);border-radius:10px 0 0 10px;
+}
+.form-row .iti .iti__selected-flag{
+  height:100%;padding:0 14px!important;display:flex!important;align-items:center;
+  border-radius:10px 0 0 10px;outline:none;
+}
+.form-row .iti .iti__selected-flag:hover,
+.form-row .iti .iti__selected-flag[aria-expanded="true"]{background:rgba(10,133,88,.08)}
+.iti--separate-dial-code .iti__selected-dial-code{
+  color:var(--ink);font-size:14.5px;font-weight:600;margin-left:8px;
+}
+.form-row .iti input,
+.form-row .iti input[type="tel"]{
+  border:0!important;border-radius:0!important;background:transparent!important;
+  padding:14px 16px!important;flex:1;min-width:0;width:100%;
+}
+.form-row .iti input:focus,
+.form-row .iti input[type="tel"]:focus{outline:none!important;border:0!important;box-shadow:none!important}
+.iti__flag{background-image:url("https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/img/flags.png")}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
+  .iti__flag{background-image:url("https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/img/flags@2x.png")}
+}
+.iti__country-list{
+  background:#fff;border:1px solid var(--line);color:var(--ink);border-radius:11px;
+  box-shadow:0 16px 40px -12px rgba(0,0,0,.22);
+  max-height:260px;min-width:300px;font-size:14px;z-index:10;margin-top:4px;
+}
+.iti__country.iti__highlight,.iti__country:hover{background:rgba(10,133,88,.08)}
 
 /* ---------- ПОДВАЛ ---------- */
 .ftr{padding:42px 0 30px;background:#fff}
