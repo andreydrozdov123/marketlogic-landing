@@ -456,14 +456,28 @@ figure{margin:0}
 .about__vals span{display:block;margin-top:4px;font-size:13.5px;color:rgba(255,255,255,.62)}
 
 .about__mission{
-  align-self:start;padding:30px 28px;border-radius:var(--r-lg);
-  background:var(--ind);
+  position:relative;overflow:hidden;align-self:start;
+  padding:30px 28px;border-radius:var(--r-lg);
+  background:
+    radial-gradient(420px 220px at 88% 6%, rgba(20,190,124,.5), transparent 66%),
+    linear-gradient(135deg,#04241A 0%,#073827 46%,#0A6A45 100%);
 }
-.about__ic{
-  display:grid;place-items:center;width:48px;height:48px;margin-bottom:20px;
-  border-radius:13px;background:rgba(255,255,255,.18);color:#fff;
+.about__mission::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:
+    linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:46px 46px;
+  -webkit-mask-image:linear-gradient(150deg,#000 8%,transparent 62%);
+  mask-image:linear-gradient(150deg,#000 8%,transparent 62%);
 }
-.about__ic svg{width:26px;height:26px}
+.about__mission::after{
+  content:"";position:absolute;right:-60px;bottom:-70px;width:210px;height:210px;
+  border:1.5px solid rgba(255,255,255,.1);border-radius:50%;pointer-events:none;
+}
+.about__mission>*{position:relative;z-index:2}
+.about__ic{display:block;width:64px;margin-bottom:20px}
+.about__ic picture,.about__ic img{display:block;width:100%;height:auto}
 .about__quote{font-size:19px;font-weight:700;line-height:1.4;letter-spacing:-.025em}
 .about__sign{display:block;margin-top:18px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 
@@ -512,17 +526,17 @@ figure{margin:0}
   font-size:clamp(17px,3vw,22px);font-weight:600;letter-spacing:-.02em;
   color:rgba(255,255,255,.72);
 }
-.apply__copy p{margin-top:18px;color:rgba(255,255,255,.72);font-size:17px}
-.apply__pts{display:grid;gap:11px;margin-top:24px}
+.apply__copy p{margin-top:14px;color:rgba(255,255,255,.72);font-size:16px}
+.apply__pts{display:none;gap:11px;margin-top:24px}
 .apply__pts li{position:relative;padding-left:28px;color:rgba(255,255,255,.8);font-size:15px}
 .apply__pts li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--ind)}
 
-.form{padding:22px 20px;border-radius:var(--r-lg);background:#fff;color:var(--ink)}
-.form__t{font-size:22px;letter-spacing:-.03em;margin-bottom:8px}
-.form__sub{color:var(--ink-2);font-size:14.5px;margin-bottom:22px}
+.form{padding:20px 18px;border-radius:var(--r-lg);background:#fff;color:var(--ink)}
+.form__t{font-size:20px;letter-spacing:-.03em;margin-bottom:18px}
+.form__sub{display:none;color:var(--ink-2);font-size:14.5px;margin-bottom:22px}
 
-.form-row{margin-bottom:15px}
-.form-row label{display:block;margin-bottom:7px;font-size:13.5px;font-weight:600;color:var(--ink-2)}
+.form-row{margin-bottom:12px}
+.form-row label{display:block;margin-bottom:5px;font-size:13.5px;font-weight:600;color:var(--ink-2)}
 .form-row input{
   width:100%;padding:15px 16px;border:1.5px solid var(--line);border-radius:11px;
   background:#fff;color:var(--ink);font:inherit;font-size:15.5px;
@@ -535,7 +549,7 @@ figure{margin:0}
 .form-row.error .err-msg{display:block}
 
 .form-consent{
-  display:flex;align-items:flex-start;gap:10px;margin:18px 0 20px;
+  display:flex;align-items:flex-start;gap:10px;margin:14px 0 16px;
   font-size:12.5px;line-height:1.5;color:var(--ink-2);cursor:pointer;
 }
 .form-consent input{
@@ -648,6 +662,14 @@ body.pp-open{overflow:hidden}
   .pp__t{font-size:22px}
 }
 
+/* короткие тексты для мобильного */
+.t-full{display:none}
+.t-short{display:inline}
+@media (min-width:900px){
+  .t-full{display:inline}
+  .t-short{display:none}
+}
+
 /* ---------- ПОЯВЛЕНИЕ ---------- */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
 .rv.on{opacity:1;transform:none}
@@ -704,6 +726,11 @@ body.pp-open{overflow:hidden}
   .about__vals{grid-template-columns:1fr 1fr;gap:14px}
   .about__mission{padding:38px 34px;position:sticky;top:100px}
   .apply{padding:96px 0}
+  .apply__pts{display:grid}
+  .form__sub{display:block;margin-bottom:22px}
+  .form__t{font-size:22px;margin-bottom:8px}
+  .apply__copy p{margin-top:18px;font-size:17px}
+  .form-row{margin-bottom:15px}
   .apply__in{grid-template-columns:1fr .8fr;gap:60px}
   .form{padding:32px}
   .ftr__top{flex-direction:row;align-items:center;justify-content:space-between}
