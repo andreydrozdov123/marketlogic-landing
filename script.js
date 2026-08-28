@@ -267,7 +267,7 @@
         .then(function () { window.location.replace('thank-you.html'); })
         .catch(function () {
           submitBtn.disabled = false;
-          submitBtn.textContent = 'Отправить заявку';
+          submitBtn.textContent = 'Оставить заявку';
           alert('Не удалось отправить заявку. Попробуйте ещё раз.');
         });
     });
