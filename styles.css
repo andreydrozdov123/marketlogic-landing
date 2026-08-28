@@ -532,7 +532,7 @@ figure{margin:0}
 .apply__pts li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--ind)}
 
 .form{padding:20px 18px;border-radius:var(--r-lg);background:#fff;color:var(--ink)}
-.form__t{font-size:20px;letter-spacing:-.03em;margin-bottom:18px}
+.form__t{display:none;font-size:20px;letter-spacing:-.03em;margin-bottom:18px}
 .form__sub{display:none;color:var(--ink-2);font-size:14.5px;margin-bottom:22px}
 
 .form-row{margin-bottom:12px}
@@ -728,7 +728,7 @@ body.pp-open{overflow:hidden}
   .apply{padding:96px 0}
   .apply__pts{display:grid}
   .form__sub{display:block;margin-bottom:22px}
-  .form__t{font-size:22px;margin-bottom:8px}
+  .form__t{display:block;font-size:22px;margin-bottom:8px}
   .apply__copy p{display:block;margin-top:18px;font-size:17px}
   .form-row{margin-bottom:15px}
   .apply__in{grid-template-columns:1fr .8fr;gap:60px}
